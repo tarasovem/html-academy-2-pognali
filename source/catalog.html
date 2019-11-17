@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>HTML Academy: Погнали</title>
   </head>
-  <body class="catalog-page">
+  <body>
     <header class="page-header">
       <a class="logo page-header__logo" href="index.html">Погнали?</a>
       <nav class="main-nav">
@@ -12,37 +12,37 @@
         <div class="main-nav__wrapper">
           <ul class="site-list main-nav__site-list">
             <li class="site-list__item">
-              <a href="about.html">О сервисе</a>
+              <a class="site-list__link" href="about.html">О сервисе</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Направления</a>
+              <a class="site-list__link" href="form.html">Направления</a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">Попутчики</a>
+              <a class="site-list__link" href="catalog.html">Попутчики</a>
             </li>
           </ul>
           <ul class="user-list main-nav__user-list">
             <li class="user-list__item">
-              <a href="login.html">Авторизация</a>
+              <a class="user-list__link" href="login.html">Авторизация</a>
             </li>
           </ul>
           <ul class="contacts main-nav__contacts">
             <li class="contacts__item">
-              <a href="tel:88005558628">8 800 555-86-28</a>
+              <a class="contacts__link contacts__link_icon_phone" href="tel:88005558628">8 800 555-86-28</a>
             </li>
             <li class="contacts__item">
-              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              <a class="contacts__link contacts__link_icon_mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
           </ul>
           <ul class="social main-nav__social">
             <li class="social__item">
-              <a href="">Facebook</a>
+              <a class="social__link" href="">Facebook</a>
             </li>
             <li class="social__item">
-              <a href="">Вконтакте</a>
+              <a class="social__link" href="">Вконтакте</a>
             </li>
             <li class="social__item">
-              <a href="">Instagram</a>
+              <a class="social__link" href="">Instagram</a>
             </li>
           </ul>
         </div>
@@ -50,17 +50,16 @@
     </header>
     <main class="page-main">
       <h1 class="page-main__title">Попутчики</h1>
-      <section class="companions catalog-page__companions">
+      <section class="companions-catalog">
         <h2 class="visually-hidden">Каталог попутчиков</h2>
-        <ul class="companions__list">
-          <li class="companions__item">
-            <div class="companions__avatar">
+        <div class="cards companions-catalog__cards">
+          <article class="cards__item">
+            <div class="cards__avatar">
               <img src="https://via.placeholder.com/70x70" alt="Аватар пользователя" width="70" height="70">
-              <div class="companions__like companions__like_status_active"></div>
+              <div class="cards__like cards__like_status_liked"></div>
             </div>
-            <h3 class="subject companions__subject subject_status_offline">Таня
-              Фирсова</h3>
-            <p class="followers">1,5 M</p>
+            <div class="cards__subject cards__subject_status_offline">Таня Фирсова</div>
+            <p class="cards__followers">1,5 M</p>
             <ul class="tags">
               <li class="tags__item">#ЗОЖ</li>
               <li class="tags__item">#ПП</li>
@@ -69,41 +68,41 @@
               <li class="tags__item">#авокадо</li>
               <li class="tags__item">#смузи</li>
             </ul>
-            <h4 class="companions__subtitle">хочет посетить:</h4>
-            <ul class="flags flags_direction_vertical">
-              <li class="flags__item">
-                <img src="https://via.placeholder.com/26x18" alt="Флаг страны" width="26" height="18">
-                <span class="flags__description">Шри Ланка</span>
+            <p class="cards__subtitle">хочет посетить:</p>
+            <ul class="countries cards__countries">
+              <li class="countries__item">
+                <div class="flag flag_country_sri-lanka"></div>
+                <p class="countries__description">Шри Ланка</p>
               </li>
-              <li class="flags__item">
-                <img src="https://via.placeholder.com/26x18" alt="Флаг страны" width="26" height="18">
-                <span class="flags__description">Тайланд</span>
+              <li class="countries__item">
+                <div class="flag flag_country_thailand"></div>
+                <p class="countries__description">Тайланд</p>
               </li>
-              <li class="flags__item">
-                <img src="https://via.placeholder.com/26x18" alt="Флаг страны" width="26" height="18">
-                <span class="flags__description">Сейшелы</span>
+              <li class="countries__item">
+                <div class="flag flag_country_seychelles"></div>
+                <p class="countries__description">Сейшелы</p>
               </li>
             </ul>
-            <h4 class="companions__subtitle">транспорт:</h4>
-            <ul class="transports companions__transports transports_type_rounded">
+            <p class="cards__subtitle">транспорт:</p>
+            <ul class="transports cards__transports transports_type_rounded">
               <li class="transports__item transports__item_icon_plane transports__item_status_active">Самолет</li>
               <li class="transports__item transports__item_icon_bus">Автобус</li>
               <li class="transports__item transports__item_icon_bike">Велосипед</li>
               <li class="transports__item transports__item_icon_run">Бег</li>
             </ul>
-            <h4 class="companions__subtitle">левел:</h4>
-            <div class="level companions__level level_type_without-title">
+            <p class="cards__subtitle">левел:</p>
+            <div class="level cards__level level_type_without-title">
               <div class="level__count">99</div>
             </div>
             <a class="button button_type_simple" href="#">Позвать!</a>
-          </li>
-          <li class="companions__item">
-            <div class="companions__avatar">
+          </article>
+          <article class="cards__item">
+            <div class="cards__avatar">
               <img src="https://via.placeholder.com/70x70" alt="Аватар пользователя" width="70" height="70">
-              <div class="companions__like"></div>
+              <div class="cards__like cards__like_status_liked"></div>
             </div>
-            <h3 class="subject companions__subject subject_status_offline">Петя Демин</h3>
-            <p class="followers">150</p>
+            <div class="cards__subject cards__subject_status_offline">Петя Демин</div>
+            <p class="cards__followers">150</p>
             <ul class="tags">
               <li class="tags__item">#бургер</li>
               <li class="tags__item">#бар</li>
@@ -111,37 +110,37 @@
               <li class="tags__item">#концерт</li>
               <li class="tags__item">#крафт</li>
             </ul>
-            <h4 class="companions__subtitle">хочет посетить:</h4>
-            <ul class="flags flags_direction_vertical">
-              <li class="flags__item">
-                <img src="https://via.placeholder.com/26x18" alt="Флаг страны" width="26" height="18">
-                <span class="flags__description">Бельгия</span>
+            <p class="cards__subtitle">хочет посетить:</p>
+            <ul class="countries cards__countries">
+              <li class="countries__item">
+                <div class="flag flag_country_belgium"></div>
+                <p class="countries__description">Бельгия</p>
               </li>
-              <li class="flags__item">
-                <img src="https://via.placeholder.com/26x18" alt="Флаг страны" width="26" height="18">
-                <span class="flags__description">Чехия</span>
+              <li class="countries__item">
+                <div class="flag flag_country_czech"></div>
+                <p class="countries__description">Чехия</p>
               </li>
             </ul>
-            <h4 class="companions__subtitle">транспорт:</h4>
-            <ul class="transports companions__transports transports_type_rounded">
+            <p class="cards__subtitle">транспорт:</p>
+            <ul class="transports cards__transports transports_type_rounded">
               <li class="transports__item transports__item_icon_plane transports__item_status_active">Самолет</li>
               <li class="transports__item transports__item_icon_bus transports__item_status_active">Автобус</li>
               <li class="transports__item transports__item_icon_bike">Велосипед</li>
               <li class="transports__item transports__item_icon_run transports__item_status_active">Бег</li>
             </ul>
-            <h4 class="companions__subtitle">левел:</h4>
-            <div class="level companions__level level_type_without-title">
+            <p class="cards__subtitle">левел:</p>
+            <div class="level cards__level level_type_without-title">
               <div class="level__count">80</div>
             </div>
             <a class="button button_type_simple" href="#">Позвать!</a>
-          </li>
-          <li class="companions__item">
-            <div class="companions__avatar">
+          </article>
+          <article class="cards__item">
+            <div class="cards__avatar">
               <img src="https://via.placeholder.com/70x70" alt="Аватар пользователя" width="70" height="70">
-              <div class="companions__like"></div>
+              <div class="cards__like cards__like_status_liked"></div>
             </div>
-            <h3 class="subject companions__subject subject_status_offline">Марк Смолов</h3>
-            <p class="followers">1700</p>
+            <div class="cards__subject cards__subject_status_offline">Марк Смолов</div>
+            <p class="cards__followers">1700</p>
             <ul class="tags">
               <li class="tags__item">#рэп</li>
               <li class="tags__item">#тату</li>
@@ -149,94 +148,85 @@
               <li class="tags__item">#кроссовки</li>
               <li class="tags__item">#суприм</li>
             </ul>
-            <h4 class="companions__subtitle">хочет посетить:</h4>
-            <ul class="flags flags_direction_vertical">
-              <li class="flags__item">
-                <img src="https://via.placeholder.com/26x18" alt="Флаг страны" width="26" height="18">
-                <span class="flags__description">США</span>
+            <p class="cards__subtitle">хочет посетить:</p>
+            <ul class="countries cards__countries">
+              <li class="countries__item">
+                <div class="flag flag_country_usa"></div>
+                <p class="countries__description">США</p>
               </li>
-              <li class="flags__item">
-                <img src="https://via.placeholder.com/26x18" alt="Флаг страны" width="26" height="18">
-                <span class="flags__description">Австралия</span>
+              <li class="countries__item">
+                <div class="flag flag_country_australia"></div>
+                <p class="countries__description">Австралия</p>
               </li>
-              <li class="flags__item">
-                <img src="https://via.placeholder.com/26x18" alt="Флаг страны" width="26" height="18">
-                <span class="flags__description">Доминикана</span>
+              <li class="countries__item">
+                <div class="flag flag_country_dominica"></div>
+                <p class="countries__description">Доминикана</p>
               </li>
             </ul>
-            <h4 class="companions__subtitle">транспорт:</h4>
-            <ul class="transports companions__transports transports_type_rounded">
+            <p class="cards__subtitle">транспорт:</p>
+            <ul class="transports cards__transports transports_type_rounded">
               <li class="transports__item transports__item_icon_plane transports__item_status_active">Самолет</li>
               <li class="transports__item transports__item_icon_bus">Автобус</li>
               <li class="transports__item transports__item_icon_bike transports__item_status_active">Велосипед</li>
               <li class="transports__item transports__item_icon_run">Бег</li>
             </ul>
-            <h4 class="companions__subtitle">левел:</h4>
-            <div class="level companions__level level_type_without-title">
+            <p class="cards__subtitle">левел:</p>
+            <div class="level cards__level level_type_without-title">
               <div class="level__count">25</div>
             </div>
             <a class="button button_type_simple" href="#">Позвать!</a>
-          </li>
-          <li class="companions__item">
-            <div class="companions__avatar">
+          </article>
+          <article class="cards__item">
+            <div class="cards__avatar">
               <img src="https://via.placeholder.com/70x70" alt="Аватар пользователя" width="70" height="70">
-              <div class="companions__like"></div>
+              <div class="cards__like cards__like_status_liked"></div>
             </div>
-            <h3 class="subject companions__subject subject_status_online">Лариса Роговая</h3>
-            <p class="followers">23</p>
+            <div class="cards__subject cards__subject_status_offline">Лариса Роговая</div>
+            <p class="cards__followers">23</p>
             <ul class="tags">
               <li class="tags__item">#образование</li>
               <li class="tags__item">#карьера</li>
               <li class="tags__item">#учеба</li>
               <li class="tags__item">#линкедин</li>
             </ul>
-            <h4 class="companions__subtitle">хочет посетить:</h4>
-            <ul class="flags flags_direction_vertical">
-              <li class="flags__item">
-                <img src="https://via.placeholder.com/26x18" alt="Флаг страны" width="26" height="18">
-                <span class="flags__description">Великобритания</span>
+            <p class="cards__subtitle">хочет посетить:</p>
+            <ul class="countries cards__countries">
+              <li class="countries__item">
+                <div class="flag flag_country_united-kingdom"></div>
+                <p class="countries__description">Великобритания</p>
               </li>
-              <li class="flags__item">
-                <img src="https://via.placeholder.com/26x18" alt="Флаг страны" width="26" height="18">
-                <span class="flags__description">Германия</span>
+              <li class="countries__item">
+                <div class="flag flag_country_germany"></div>
+                <p class="countries__description">Германия</p>
               </li>
             </ul>
-            <h4 class="companions__subtitle">транспорт:</h4>
-            <ul class="transports companions__transports transports_type_rounded">
+            <p class="cards__subtitle">транспорт:</p>
+            <ul class="transports cards__transports transports_type_rounded">
               <li class="transports__item transports__item_icon_plane transports__item_status_active">Самолет</li>
               <li class="transports__item transports__item_icon_bus transports__item_status_active">Автобус</li>
               <li class="transports__item transports__item_icon_bike">Велосипед</li>
               <li class="transports__item transports__item_icon_run">Бег</li>
             </ul>
-            <h4 class="companions__subtitle">левел:</h4>
-            <div class="level companions__level level_type_without-title">
+            <p class="cards__subtitle">левел:</p>
+            <div class="level cards__level level_type_without-title">
               <div class="level__count">50</div>
             </div>
             <a class="button button_type_simple" href="#">Позвать!</a>
-          </li>
-        </ul>
-        <a class="button button_type_show" href="#">Показать еще</a>
-        <ul class="pagination">
-          <li class="pagination__item pagination__item_arrow_left">
-            <a href="#">Назад</a>
-          </li>
-          <li class="pagination__item pagination__item_arrow_right">
-            <a href="#">Вперед</a>
-          </li>
-        </ul>
+          </article>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
       <a class="logo page-footer__logo" href="index.html">Погнали?</a>
       <ul class="social page-footer__social">
         <li class="social__item">
-          <a href="">Facebook</a>
+          <a class="social__link" href="">Facebook</a>
         </li>
         <li class="social__item">
-          <a href="">Вконтакте</a>
+          <a class="social__link" href="">Вконтакте</a>
         </li>
         <li class="social__item">
-          <a href="">Instagram</a>
+          <a class="social__link" href="">Instagram</a>
         </li>
       </ul>
       <div class="developers page-footer__developers">

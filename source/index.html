@@ -12,59 +12,56 @@
         <div class="main-nav__wrapper">
           <ul class="site-list main-nav__site-list">
             <li class="site-list__item">
-              <a href="about.html">О сервисе</a>
+              <a class="site-list__link" href="about.html">О сервисе</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Направления</a>
+              <a class="site-list__link" href="form.html">Направления</a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">Попутчики</a>
+              <a class="site-list__link" href="catalog.html">Попутчики</a>
             </li>
           </ul>
           <ul class="user-list main-nav__user-list">
             <li class="user-list__item">
-              <a href="login.html">Авторизация</a>
+              <a class="user-list__link" href="login.html">Авторизация</a>
             </li>
           </ul>
           <ul class="contacts main-nav__contacts">
             <li class="contacts__item">
-              <a href="tel:88005558628">8 800 555-86-28</a>
+              <a class="contacts__link contacts__link_icon_phone" href="tel:88005558628">8 800 555-86-28</a>
             </li>
             <li class="contacts__item">
-              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              <a class="contacts__link contacts__link_icon_mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
           </ul>
           <ul class="social main-nav__social">
             <li class="social__item">
-              <a href="">Facebook</a>
+              <a class="social__link" href="">Facebook</a>
             </li>
             <li class="social__item">
-              <a href="">Вконтакте</a>
+              <a class="social__link" href="">Вконтакте</a>
             </li>
             <li class="social__item">
-              <a href="">Instagram</a>
+              <a class="social__link" href="">Instagram</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">
-        &laquo;Погнали&raquo;&nbsp;&mdash; сервис для поиска попутчиков
-        в&nbsp;путешествии
-      </h1>
+      <h1 class="visually-hidden">"Погнали" сервис для поиска попутчиков в путешествии</h1>
       <b class="page-main__slogan">В путешествие с крутыми попутчиками!</b>
-      <ul class="contact-list page-main__contact-list">
-        <li class="contact-list__item">
-          <a href="tel:88005558628">8 800 555-86-28</a>
+      <ul class="contacts page-main__contacts">
+        <li class="contacts__item">
+          <a class="contacts__link contacts__link_icon_phone" href="tel:88005558628">8 800 555-86-28</a>
         </li>
-        <li class="contact-list__item">
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <li class="contacts__item">
+          <a class="contacts__link contacts__link_icon_mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
       </ul>
       <ul class="user-list page-main__user-list">
         <li class="user-list__item">
-          <a href="login.html">Авторизация</a>
+          <a class="user-list__link" href="login.html">Авторизация</a>
         </li>
       </ul>
       <section class="review page-main__review">
@@ -92,7 +89,7 @@
           волне с тобой! Делитесь своими идеями путешествий и&nbsp;черпайте
           вдохновение в&nbsp;чужих.
         </p>
-        <p class="about__description about__description_lead">
+        <p class="about__description about__description_weight_lead">
           А&nbsp;если найдете кого-то близкого по&nbsp;духу&nbsp;&mdash; скорее
           зовите в&nbsp;совместный трип!
         </p>
@@ -104,35 +101,35 @@
           сами пишут о&nbsp;странах, куда хотели&nbsp;бы отправиться и&nbsp;чем
           можно там заняться.
         </p>
-        <ul class="directions__list">
-          <li class="directions__item">
-            <img class="directions__image" src="https://via.placeholder.com/270x110" alt="Тайланд" width="270" height="110">
-            <div class="directions__wrapper">
-              <img class="directions__flag" src="https://via.placeholder.com/35x24" alt="Флаг страны" width="35" height="24">
-              <h3 class="directions__subject">Таиланд</h3>
-              <p class="directions__description">Джунгли зовут!</p>
-              <span class="directions__counter">18321</span>
+        <div class="cards directions_cards">
+          <article class="cards__item">
+            <div class="cards__preview">
+              <img src="https://via.placeholder.com/270x110" alt="Острова Тайланда" width="270" height="110">
             </div>
-          </li>
-          <li class="directions__item">
-            <img class="directions__image" src="https://via.placeholder.com/270x110" alt="Франция" width="270" height="110">
-            <div class="directions__wrapper">
-              <img class="directions__flag" src="https://via.placeholder.com/35x24" alt="Флаг страны" width="35" height="24">
-              <h3 class="directions__subject">Франция</h3>
-              <p class="directions__description">Трэ бьен, манифик!</p>
-              <span class="directions__counter">12518</span>
+            <div class="flag flag_country_thailand"></div>
+            <h3 class="cards__subject">Таиланд</h3>
+            <p class="cards__description">Джунгли зовут</p>
+            <p class="cards__counter">18321</p>
+          </article>
+          <article class="cards__item">
+            <div class="cards__preview">
+              <img src="https://via.placeholder.com/270x110" alt="Улицы Франции" width="270" height="110">
             </div>
-          </li>
-          <li class="directions__item">
-            <img class="directions__image" src="https://via.placeholder.com/270x110" alt="Чехия" width="270" height="110">
-            <div class="directions__wrapper">
-              <img class="directions__flag" src="https://via.placeholder.com/35x24" alt="Флаг страны" width="35" height="24">
-              <h3 class="directions__subject">Чехия</h3>
-              <p class="directions__description">Закоулки старой Европы</p>
-              <span class="directions__counter">5326</span>
+            <div class="flag flag_country_france"></div>
+            <h3 class="cards__subject">Франция</h3>
+            <p class="cards__description">Трэ бьен, манифик!</p>
+            <p class="cards__counter">12518</p>
+          </article>
+          <article class="cards__item">
+            <div class="cards__preview">
+              <img src="https://via.placeholder.com/270x110" alt="Карлов мост, Чехия" width="270" height="110">
             </div>
-          </li>
-        </ul>
+            <div class="flag flag_country_czech"></div>
+            <h3 class="cards__subject">Чехия</h3>
+            <p class="cards__description">Закоулки старой Европы</p>
+            <p class="cards__counter">5326</p>
+          </article>
+        </div>
         <a class="button button_type_more" href="form.html">Показать все</a>
       </section>
       <section class="companions page-main_companions">
@@ -145,26 +142,28 @@
         <p class="companions__descriptions companions__descriptions_lead">
           Теперь можно легко найти единомышленников!
         </p>
-        <ul class="companions__list">
-          <li class="companions__item">
-            <div class="level companions__level">
+        <div class="cards companions__cards">
+          <article class="cards__item">
+            <div class="level cards__level">
               <div class="level__count">99</div>
               <div class="level__title">level</div>
             </div>
-            <img class="companions__image" src="https://via.placeholder.com/270x270" alt="Аватар пользователя" width="270" height="270">
-            <ul class="flags companions__flags flags_direction_horizontal">
-              <li class="flags__item">
-                <img src="https://via.placeholder.com/35x24" alt="Флаг страны" width="35" height="24">
+            <div class="cards__avatar">
+              <img src="https://via.placeholder.com/270x270" alt="Аватар пользователя" width="270" height="270">
+            </div>
+            <ul class="countries cards__countries">
+              <li class="countries__item">
+                <div class="flag flag_country_sri-lanka"></div>
               </li>
-              <li class="flags__item">
-                <img src="https://via.placeholder.com/35x24" alt="Флаг страны" width="35" height="24">
+              <li class="countries__item">
+                <div class="flag flag_country_thailan"></div>
               </li>
-              <li class="flags__item">
-                <img src="https://via.placeholder.com/35x24" alt="Флаг страны" width="35" height="24">
+              <li class="countries__item">
+                <div class="flag flag_country_seychelles"></div>
               </li>
             </ul>
-            <h3 class="subject companions__subject subject_status_offline">Таня Фирсова</h3>
-            <ul class="tags companions__tags">
+            <h3 class="cards__subject cards__subject_status_offline">Таня Фирсова</h3>
+            <ul class="tags cards__tags">
               <li class="tags__item">#ЗОЖ</li>
               <li class="tags__item">#ПП</li>
               <li class="tags__item">#Фитнес</li>
@@ -172,43 +171,45 @@
               <li class="tags__item">#авокадо</li>
               <li class="tags__item">#смузи</li>
             </ul>
-            <ul class="transports companions__transports">
+            <ul class="transports cards__transports">
               <li class="transports__item transports__item_icon_plane transports__item_status_active">Самолет</li>
               <li class="transports__item transports__item_icon_bus">Автобус</li>
               <li class="transports__item transports__item_icon_bike">Велосипед</li>
               <li class="transports__item transports__item_icon_run">Бег</li>
             </ul>
-          </li>
-          <li class="companions__item">
-            <div class="level companions__level">
+          </article>
+          <article class="cards__item">
+            <div class="level cards__level">
               <div class="level__count">80</div>
               <div class="level__title">level</div>
             </div>
-            <img class="companions__image" src="https://via.placeholder.com/270x270" alt="Аватар пользователя" width="270" height="270">
-            <ul class="flags companions__flags">
-              <li class="flags__item">
-                <img src="https://via.placeholder.com/35x24" alt="Флаг страны" width="35" height="24">
+            <div class="cards__avatar">
+              <img src="https://via.placeholder.com/270x270" alt="Аватар пользователя" width="270" height="270">
+            </div>
+            <ul class="countries cards__countries">
+              <li class="countries__item">
+                <div class="flag flag_country_belgium"></div>
               </li>
-              <li class="flags__item">
-                <img src="https://via.placeholder.com/35x24" alt="Флаг страны" width="35" height="24">
+              <li class="countries__item">
+                <div class="flag flag_country_czech"></div>
               </li>
             </ul>
-            <h3 class="companions__subject companions__subject_status_offline">Петя Демин</h3>
-            <ul class="tags companions__tags">
+            <h3 class="cards__subject cards__subject_status_offline">Петя Демин</h3>
+            <ul class="tags cards__tags">
               <li class="tags__item">#бургер</li>
               <li class="tags__item">#бар</li>
               <li class="tags__item">#футбол</li>
               <li class="tags__item">#концерт</li>
               <li class="tags__item">#крафт</li>
             </ul>
-            <ul class="transports companions__transports">
+            <ul class="transports cards__transports">
               <li class="transports__item transports__item_icon_plane transports__item_status_active">Самолет</li>
               <li class="transports__item transports__item_icon_bus transports__item_status_active">Автобус</li>
               <li class="transports__item transports__item_icon_bike">Велосипед</li>
               <li class="transports__item transports__item_icon_run transports__item_status_active">Бег</li>
             </ul>
-          </li>
-        </ul>
+          </article>
+        </div>
         <a class="button button_type_more" href="catalog.html"></a>
       </section>
       <section class="add-profile">
@@ -231,13 +232,13 @@
       <a class="logo page-footer__logo">Погнали?</a>
       <ul class="social page-footer__social">
         <li class="social__item">
-          <a href="">Facebook</a>
+          <a class="social__link" href="">Facebook</a>
         </li>
         <li class="social__item">
-          <a href="">Вконтакте</a>
+          <a class="social__link" href="">Вконтакте</a>
         </li>
         <li class="social__item">
-          <a href="">Instagram</a>
+          <a class="social__link" href="">Instagram</a>
         </li>
       </ul>
       <div class="developers page-footer__developers">
