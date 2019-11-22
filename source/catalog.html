@@ -8,8 +8,10 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="logo page-header__logo" href="index.html">Погнали?</a>
-      <nav class="main-nav">
+      <a class="logo page-header__logo" href="index.html">
+        <img src="img/logo-mobile-white@1x.png" alt="Логотип сервиса" width="100" height="19">
+      </a>
+      <nav class="main-nav" style="display: none;">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="site-list main-nav__site-list">
@@ -25,7 +27,7 @@
           </ul>
           <ul class="user-list main-nav__user-list">
             <li class="user-list__item">
-              <a class="user-list__link" href="login.html">Авторизация</a>
+              <a class="button user-list__link" href="login.html">Авторизация</a>
             </li>
           </ul>
           <ul class="contacts main-nav__contacts">
@@ -60,15 +62,15 @@
               <img src="https://via.placeholder.com/70x70" alt="Аватар пользователя" width="70" height="70">
               <div class="card__like card__like_status_liked"></div>
             </div>
-            <div class="card__subject card__subject_status_offline">Таня Фирсова</div>
+            <div class="card__subject card__subject_size_small card__subject_status_offline">Таня Фирсова</div>
             <p class="card__followers">1,5 M</p>
             <ul class="tags">
-              <li class="tags__item">#ЗОЖ</li>
-              <li class="tags__item">#ПП</li>
-              <li class="tags__item">#Фитнес</li>
-              <li class="tags__item">#пляж</li>
-              <li class="tags__item">#авокадо</li>
-              <li class="tags__item">#смузи</li>
+              <li class="tags__item tags__item_small">#ЗОЖ</li>
+              <li class="tags__item tags__item_small">#ПП</li>
+              <li class="tags__item tags__item_small">#Фитнес</li>
+              <li class="tags__item tags__item_small">#пляж</li>
+              <li class="tags__item tags__item_small">#авокадо</li>
+              <li class="tags__item tags__item_small">#смузи</li>
             </ul>
             <p class="card__subtitle">хочет посетить:</p>
             <ul class="countries card__countries">
@@ -100,7 +102,7 @@
             </ul>
             <p class="card__subtitle">левел:</p>
             <div class="level card__level level_type_without-title">
-              <div class="level__count">99</div>
+              <div class="level__count level__count_theme_dark">99</div>
             </div>
             <a class="button button_type_simple" href="#">Позвать!</a>
           </article>
@@ -239,7 +241,9 @@
       </section>
     </main>
     <footer class="page-footer">
-      <a class="logo page-footer__logo" href="index.html">Погнали?</a>
+      <a class="logo page-footer__logo" href="index.html">
+        <img src="img/logo-mobile-blue@1x.png" alt="Логотип сервиса" width="100" height="19">
+      </a>
       <ul class="social page-footer__social">
         <li class="social__item">
           <a class="social__link" href="">Facebook</a>

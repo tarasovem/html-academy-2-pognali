@@ -10,6 +10,18 @@
   color: $text-color_dark;
 }
 
+.card__subject_size_small {
+  font-size: 20px;
+}
+
+.card__followers {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: $text-color_darker;
+  text-transform: uppercase;
+}
+
 .card__description {
   color: $text-color_primary;
   opacity: 0.3;
@@ -23,3 +35,9 @@
   text-transform: uppercase;
 }
 
+.card__subtitle {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $text-color_primary;
+}

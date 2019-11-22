@@ -2,10 +2,15 @@
   list-style: none;
 }
 
+
 .tags__item {
   @include font-family_default;
   color: $text-color_primary;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
+}
+
+.tags__item_small {
+  font-size: 15px;
 }

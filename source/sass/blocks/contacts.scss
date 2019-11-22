@@ -1,8 +1,12 @@
 .contacts {
   list-style: none;
-  padding-left: 0;
 }
 
 .contacts__link {
-  font-size: 0;
+  @include font-family_default;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  color: $text-color_darker;
+  text-decoration: none;
 }

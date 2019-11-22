@@ -13,3 +13,9 @@
   font-weight: 700;
   text-align: right;
 }
+
+.page-main__title {
+  @include font-family_default;
+  color: $text-color_light;
+  background-color: $bg-color_primary;
+}
