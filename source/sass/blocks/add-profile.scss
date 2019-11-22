@@ -1,0 +1,15 @@
+.add-profile {
+  background-color: $bg-color_secondary;
+}
+
+.add-profile__list {
+  list-style: none;
+}
+
+.add-profile__item {
+  @include font-family_default;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+  color: $text-color_primary;
+}

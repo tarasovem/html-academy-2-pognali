@@ -1,0 +1,25 @@
+.card {
+  @include font-family_default;
+  background-color: $bg-color_light;
+}
+
+.card__subject {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  color: $text-color_dark;
+}
+
+.card__description {
+  color: $text-color_primary;
+  opacity: 0.3;
+  font-weight: 500;
+}
+
+.card__counter {
+  color: $text-color_primary;
+  opacity: 0.3;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+

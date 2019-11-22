@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="logo page-header__logo">Погнали?</a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <a class="logo page-header__logo">
+        <img src="img/logo-mobile-white@1x.png" alt="Логотип сервиса" width="100" height="19">
+      </a>
+      <nav class="main-nav" style="display: none;">
+        <button class="main-nav__toggle" type="button"></button>
         <div class="main-nav__wrapper">
           <ul class="site-list main-nav__site-list">
             <li class="site-list__item">
@@ -51,20 +54,24 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">"Погнали" сервис для поиска попутчиков в путешествии</h1>
-      <b class="page-main__slogan">В путешествие с крутыми попутчиками!</b>
-      <ul class="contacts page-main__contacts">
-        <li class="contacts__item">
-          <a class="contacts__link contacts__link_icon_phone" href="tel:88005558628">8 800 555-86-28</a>
-        </li>
-        <li class="contacts__item">
-          <a class="contacts__link contacts__link_icon_mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </li>
-      </ul>
-      <ul class="user-list page-main__user-list">
-        <li class="user-list__item">
-          <a class="user-list__link" href="login.html">Авторизация</a>
-        </li>
-      </ul>
+      <div class="page-main__wrapper">
+        <b class="page-main__slogan">В путешествие с крутыми попутчиками!</b>
+        <ul class="contacts page-main__contacts">
+          <li class="contacts__item">
+            <a class="contacts__link contacts__link_icon_phone"
+               href="tel:88005558628">8 800 555-86-28</a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link contacts__link_icon_mail"
+               href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+        <ul class="user-list page-main__user-list">
+          <li class="user-list__item">
+            <a class="button user-list__link" href="login.html">Авторизация</a>
+          </li>
+        </ul>
+      </div>
       <section class="review page-main__review">
         <h2 class="visually-hidden">Отзывы пользователей</h2>
         <blockquote class="review__blockquote">
@@ -77,27 +84,27 @@
       <section class="progress page-main__progress">
         <h2 class="visually-hidden">Что делать?</h2>
         <ol class="progress__list">
-          <li class="progress__item">Выберите направление</li>
-          <li class="progress__item">Изучите идеи путешественников</li>
-          <li class="progress__item">Находите тех, кто похож на вас</li>
-          <li class="progress__item">Путешествуйте вместе!</li>
+          <li class="progress__item progress__item_type_first">Выберите направление</li>
+          <li class="progress__item progress__item_type_second">Изучите идеи путешественников</li>
+          <li class="progress__item progress__item_type_third">Находите тех, кто похож на вас</li>
+          <li class="progress__item progress__item_type_fourth">Путешествуйте вместе!</li>
         </ol>
       </section>
       <section class="about page-main__about">
         <h2 class="section-title about__section-title">О сервисе</h2>
-        <p class="about__description">
+        <p class="text text_weight_light about__text">
           Любое путешествие веселее с&nbsp;попутчиками, которые на&nbsp;одной
           волне с тобой! Делитесь своими идеями путешествий и&nbsp;черпайте
           вдохновение в&nbsp;чужих.
         </p>
-        <p class="about__description about__description_weight_lead">
+        <p class="text about__text">
           А&nbsp;если найдете кого-то близкого по&nbsp;духу&nbsp;&mdash; скорее
           зовите в&nbsp;совместный трип!
         </p>
       </section>
       <section class="directions page-main__directions">
         <h2 class="section-title directions__section-title">Направления</h2>
-        <p class="directions__description">
+        <p class="text text_weight_light text_theme_dark directions__text">
           Мы&nbsp;не&nbsp;продаем туры и&nbsp;ничего не&nbsp;рекламируем. Люди
           сами пишут о&nbsp;странах, куда хотели&nbsp;бы отправиться и&nbsp;чем
           можно там заняться.
@@ -140,13 +147,13 @@
         <a class="button button_type_more" href="form.html">Показать все</a>
       </section>
       <section class="companions page-main_companions">
-        <h2 class="section-title companions__section-title">Попутчики</h2>
-        <p class="companions__descriptions">
+        <h2 class="section-title companions__text">Попутчики</h2>
+        <p class="text text_weight_light">
           Все мы&nbsp;индивидуальны и&nbsp;у&nbsp;каждого свой взгляд
           на&nbsp;идеальный отдых. Одному нужен пляж и&nbsp;коктейль,
           а&nbsp;другому маршрут для хайкинга.
         </p>
-        <p class="companions__descriptions companions__descriptions_lead">
+        <p class="text text_weight_bold companions__text">
           Теперь можно легко найти единомышленников!
         </p>
         <div class="companions__list">
@@ -246,7 +253,9 @@
       </section>
     </main>
     <footer class="page-footer">
-      <a class="logo page-footer__logo">Погнали?</a>
+      <a class="logo page-footer__logo">
+        <img src="img/logo-mobile-blue@1x.png" alt="Логотип сервиса" width="100" height="19">
+      </a>
       <ul class="social page-footer__social">
         <li class="social__item">
           <a class="social__link" href="">Facebook</a>

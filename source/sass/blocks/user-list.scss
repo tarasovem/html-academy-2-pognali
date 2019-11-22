@@ -1,0 +1,14 @@
+.user-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.user-list__item {
+  background-color: $bg-color_accent_lighter;
+}
+
+.user-list__link {
+  color: $text-color_dark;
+  font-size: 17px;
+  text-transform: uppercase;
+}

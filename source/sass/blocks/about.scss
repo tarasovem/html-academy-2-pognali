@@ -1,0 +1,21 @@
+.about {
+  @include font-family_default;
+  background-color: $bg-color_primary;
+  background-image: url("../../img/about-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.about__description {
+  color: $text-color_light;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.about__description_weight_light {
+  font-weight: 300;
+}
+
+.about__description_weight_bold {
+  font-weight: 700;
+}

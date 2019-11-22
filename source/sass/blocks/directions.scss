@@ -1,0 +1,11 @@
+.directions {
+  @include font-family_default;
+  background-color: $bg-color_secondary;
+}
+
+.directions__description {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  color: $text-color_primary;
+}

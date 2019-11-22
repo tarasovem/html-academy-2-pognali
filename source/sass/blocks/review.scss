@@ -1,0 +1,15 @@
+.review {
+  @include font-family_default;
+  background-color: $bg-color_primary;
+  color: $text-color_light;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.review__blockquote {
+  font-weight: 300;
+}
+
+.review__cite {
+  font-weight: 700;
+}

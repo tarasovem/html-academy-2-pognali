@@ -1,0 +1,9 @@
+.button {
+  @include font-family_default;
+  background-color: $bg-color_accent_lighter;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 18px;
+  color: $text-color_dark;
+}
