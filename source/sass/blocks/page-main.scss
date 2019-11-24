@@ -1,21 +1,74 @@
+.page-main {
+  background-color: $bg-color_primary_light;
+}
+
 .page-main__wrapper {
   background-color: $bg-color_primary;
   background-image: url("../../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: top -65px center;
 }
 
 .page-main__slogan {
   @include font-family_default;
+  display: inline-flex;
+  padding: 25px 40px 267px;
   color: $text-color_light;
   font-size: 36px;
   line-height: 40px;
   font-weight: 700;
-  text-align: right;
+  text-align: center;
 }
 
 .page-main__title {
   @include font-family_default;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 12px;
+  padding-left: 25px;
   color: $text-color_light;
   background-color: $bg-color_primary;
+}
+
+.page-main__contacts {
+  padding-left: 0;
+  margin: 0;
+}
+
+.page-main__wrapper-user {
+  display: flex;
+  justify-content: center;
+  transform: translateY(50%);
+}
+
+.page-main__review {
+  padding: 50px 50px 113px;
+}
+
+.page-main__progress {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.page-main__about {
+  @include section-border_30px(5);
+  padding-top: 30px;
+  padding-bottom: 65px;
+}
+
+.page-main__directions {
+  @include section-border_30px(4);
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+.page-main_companions {
+  @include section-border_30px(3);
+  display: flex;
+  flex-direction: column;
+}
+
+.page-main__add-profile {
+  @include section-border_30px(2);
 }

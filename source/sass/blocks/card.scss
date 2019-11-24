@@ -1,6 +1,7 @@
 .card {
   @include font-family_default;
   background-color: $bg-color_light;
+  border-radius: 10px;
 }
 
 .card__subject {
@@ -29,10 +30,12 @@
 }
 
 .card__counter {
+  margin-bottom: 0;
   color: $text-color_primary;
   opacity: 0.3;
   font-weight: 500;
   text-transform: uppercase;
+
 }
 
 .card__subtitle {
@@ -40,4 +43,9 @@
   line-height: 18px;
   font-weight: 400;
   color: $text-color_primary;
+}
+
+.card__preview img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }

@@ -1,3 +1,8 @@
+.developers {
+  display: flex;
+  justify-content: space-between;
+}
+
 .developers__title {
   @include font-family_default;
   font-size: 16px;

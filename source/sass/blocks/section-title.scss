@@ -1,5 +1,7 @@
 .section-title {
   @include font-family_default;
+  margin-top: 0;
+  margin-bottom: 0;
   color: $bg-color_accent_dark;
   font-size: 24px;
   font-weight: 700;

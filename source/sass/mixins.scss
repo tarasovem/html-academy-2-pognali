@@ -1,3 +1,11 @@
 @mixin font-family_default {
   font-family: "Blogger Sans", "Helvetica", "Arial", sans-serif;
 }
+
+@mixin section-border_30px ($z-index) {
+  position: relative;
+  margin-bottom: -30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  z-index: $z-index;
+}

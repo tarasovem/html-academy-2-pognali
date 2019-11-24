@@ -1,9 +1,11 @@
 .about {
   @include font-family_default;
-  background-color: $bg-color_primary;
-  background-image: url("../../img/about-mobile@1x.png");
+  padding-right: 57px;
+  padding-left: 50px;
+  background-color: $bg-color_primary_light;
+  background-image: url("../../img/about-mobile@1x.png"), url("../../img/blue_back.png");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 0 0, top left -19px;
 }
 
 .about__description {

@@ -56,19 +56,24 @@
       <h1 class="visually-hidden">"Погнали" сервис для поиска попутчиков в путешествии</h1>
       <div class="page-main__wrapper">
         <b class="page-main__slogan">В путешествие с крутыми попутчиками!</b>
-        <ul class="contacts page-main__contacts">
-          <li class="contacts__item">
-            <a class="contacts__link contacts__link_icon_phone" href="tel:88005558628">8 800 555-86-28</a>
-          </li>
-          <li class="contacts__item">
-            <a class="contacts__link contacts__link_icon_mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </li>
-        </ul>
-        <ul class="user-list page-main__user-list">
-          <li class="user-list__item">
-            <a class="button user-list__link" href="login.html">Авторизация</a>
-          </li>
-        </ul>
+        <div class="page-main__wrapper-user">
+          <ul class="contacts page-main__contacts">
+            <li class="contacts__item">
+              <a class="contacts__link contacts__link_icon_phone"
+                 href="tel:88005558628">8 800 555-86-28</a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link contacts__link_icon_mail"
+                 href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
+          </ul>
+          <ul class="user-list page-main__user-list">
+            <li class="user-list__item">
+              <a class="button user-list__link"
+                 href="login.html">Авторизация</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <section class="review page-main__review">
         <h2 class="visually-hidden">Отзывы пользователей</h2>
@@ -85,19 +90,19 @@
           <li class="progress__item progress__item_type_first">Выберите направление</li>
           <li class="progress__item progress__item_type_second">Изучите идеи путешественников</li>
           <li class="progress__item progress__item_type_third">Находите тех, кто похож на вас</li>
-          <li class="progress__item progress__item_type_fourth">Путешествуйте вместе!</li>
+          <li class="progress__item progress__item_type_fourth progress__item_order_last">Путешествуйте вместе!</li>
         </ol>
       </section>
       <section class="about page-main__about">
         <h2 class="section-title about__section-title">О сервисе</h2>
         <p class="text text_weight_light about__text">
-          Любое путешествие веселее с&nbsp;попутчиками, которые на&nbsp;одной
-          волне с тобой! Делитесь своими идеями путешествий и&nbsp;черпайте
-          вдохновение в&nbsp;чужих.
+          Любое путешествие веселее с  попутчиками, которые на одной
+          волне с тобой! Делитесь своими идеями путешествий и черпайте
+          вдохновение в чужих.
         </p>
-        <p class="text about__text">
-          А&nbsp;если найдете кого-то близкого по&nbsp;духу&nbsp;&mdash; скорее
-          зовите в&nbsp;совместный трип!
+        <p class="text text_weight_bold about__text">
+          А если найдете кого-то близкого по духу &mdash; скорее
+          зовите в совместный трип!
         </p>
       </section>
       <section class="directions page-main__directions">
@@ -142,16 +147,16 @@
             <p class="card__counter">5326</p>
           </article>
         </div>
-        <a class="button button_type_more" href="form.html">Показать все</a>
+        <a class="button directions__button" href="form.html">Показать все</a>
       </section>
       <section class="companions page-main_companions">
-        <h2 class="section-title companions__text">Попутчики</h2>
-        <p class="text text_weight_light">
-          Все мы&nbsp;индивидуальны и&nbsp;у&nbsp;каждого свой взгляд
-          на&nbsp;идеальный отдых. Одному нужен пляж и&nbsp;коктейль,
-          а&nbsp;другому маршрут для хайкинга.
+        <h2 class="section-title companions__section-title">Попутчики</h2>
+        <p class="text text_weight_light companions__text">
+          Все мы индивидуальны и у каждого свой взгляд
+          на идеальный отдых. Одному нужен пляж и коктейль,
+          а другому маршрут для хайкинга.
         </p>
-        <p class="text text_weight_bold companions__text">
+        <p class="text text_weight_bold companions__text companions__text">
           Теперь можно легко найти единомышленников!
         </p>
         <div class="companions__list">
@@ -232,9 +237,9 @@
             </ul>
           </article>
         </div>
-        <a class="button button_type_more" href="catalog.html"></a>
+        <a class="button companions__button" href="catalog.html">Показать всех</a>
       </section>
-      <section class="add-profile">
+      <section class="add-profile page-main__add-profile">
         <h2 class="section-title add-profile__section-title">Добавьте свой профиль</h2>
         <ol class="add-profile__list">
           <li class="add-profile__item">Базовое размещение
@@ -247,7 +252,7 @@
             <span class="add-profile__price">59 руб./мес</span>
           </li>
         </ol>
-        <a class="button button_type_link" href="#"></a>
+        <a class="button add-profile__button" href="#">Показать тарифы для бизнеса</a>
       </section>
     </main>
     <footer class="page-footer">
