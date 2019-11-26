@@ -1,8 +1,7 @@
 .review {
-  @include font-family_default;
   background-color: $bg-color_primary;
   color: $text-color_light;
-  font-size: 16px;
+  font-size: $text-size_default;
   line-height: 22px;
 }
 

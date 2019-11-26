@@ -1,4 +1,10 @@
 .page-footer {
-  padding: 68px 25px 14px;
+  position: relative;
+  padding: 58px 25px 14px;
   text-align: center;
+  background-color: $bg-color_light;
+
+  &::before {
+    @include section-border-radius_top;
+  }
 }

@@ -1,16 +1,28 @@
 .about {
-  @include font-family_default;
+  position: relative;
   padding-right: 57px;
   padding-left: 50px;
   background-color: $bg-color_primary_light;
-  background-image: url("../../img/about-mobile@1x.png"), url("../../img/blue_back.png");
+  background-image:
+    url("../../img/about-mobile@1x.png"),
+    url("../../img/blue_back.png");
   background-repeat: no-repeat;
-  background-position: 0 0, top left -19px;
+  background-position:
+    bottom -30px center,
+    top 40px left -19px;
+
+  &::after {
+    background-image: inherit;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+
+    @include section-border-radius_bottom;
+  }
 }
 
 .about__description {
   color: $text-color_light;
-  font-size: 16px;
+  font-size: $text-size_default;
   line-height: 22px;
 }
 

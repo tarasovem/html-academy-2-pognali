@@ -1,11 +1,29 @@
 @mixin font-family_default {
-  font-family: "Blogger Sans", "Helvetica", "Arial", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
 }
 
-@mixin section-border_30px ($z-index) {
-  position: relative;
-  margin-bottom: -30px;
-  border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 30px;
-  z-index: $z-index;
+@mixin section-border-radius_bottom ($radius: 30px) {
+  content: "";
+  position: absolute;
+  bottom: -$radius;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: $radius;
+  background-color: inherit;
+  border-bottom-right-radius: $radius;
+  border-bottom-left-radius: $radius;
+}
+
+@mixin section-border-radius_top ($radius: 30px) {
+  content: "";
+  position: absolute;
+  top: -$radius;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: $radius;
+  background-color: inherit;
+  border-top-right-radius: $radius;
+  border-top-left-radius: $radius;
 }

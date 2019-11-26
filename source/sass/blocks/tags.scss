@@ -4,9 +4,8 @@
 
 
 .tags__item {
-  @include font-family_default;
   color: $text-color_primary;
-  font-size: 16px;
+  font-size: $text-size_default;
   line-height: 18px;
   font-weight: 400;
 }

@@ -1,5 +1,7 @@
 body {
   margin: 0;
+
+  @include font-family_default;
 }
 
 .visually-hidden {

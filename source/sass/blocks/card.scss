@@ -1,5 +1,4 @@
 .card {
-  @include font-family_default;
   background-color: $bg-color_light;
   border-radius: 10px;
 }
@@ -35,7 +34,6 @@
   opacity: 0.3;
   font-weight: 500;
   text-transform: uppercase;
-
 }
 
 .card__subtitle {
@@ -45,7 +43,8 @@
   color: $text-color_primary;
 }
 
-.card__preview img {
+.card__preview {
+  overflow: hidden;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }

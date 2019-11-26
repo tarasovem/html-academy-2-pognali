@@ -1,10 +1,14 @@
 .directions {
-  @include font-family_default;
+  position: relative;
   background-color: $bg-color_secondary;
+
+  &::after {
+    @include section-border-radius_bottom;
+  }
 }
 
 .directions__description {
-  font-size: 16px;
+  font-size: $text-size_default;
   font-weight: 300;
   line-height: 22px;
   color: $text-color_primary;
@@ -31,6 +35,6 @@
 }
 
 .directions__button {
-  margin: 25px 25px 30px;
+  margin: 25px 25px 0;
   padding: 24px;
 }

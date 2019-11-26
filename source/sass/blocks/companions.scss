@@ -1,13 +1,24 @@
 .companions {
+  position: relative;
   background-color: $bg-color_primary_light;
-  background-image: url("../../img/smolov-back-desktop@1x.png"), url("../../img/rogovaya-back-mobile@1x.png"), url("../../img/blue_back.png");
-  background-position: right 25px top 86px, left -10px top 358px, left -19px top 86px;
+  background-image:
+    url("../../img/smolov-back-desktop@1x.png"),
+    url("../../img/blue_back.png"),
+    url("../../img/rogovaya-back-mobile@1x.png");
+  background-position:
+    right 25px top 76px,
+    left -19px top 76px,
+    left -10px top 388px;
   background-repeat: no-repeat;
+
+  &::after {
+    @include section-border-radius_bottom;
+  }
 }
 
 .companions__section-title {
   margin-bottom: 26px;
-  padding-top: 120px;
+  padding-top: 110px;
   padding-right: 50px;
   padding-left: 50px;
 }
@@ -25,10 +36,18 @@
 }
 
 .companions__button {
-  margin: 25px 25px 30px;
+  margin: 25px 25px 0;
   padding: 24px;
 }
 
 .companions__card {
   margin-bottom: 10px;
+}
+
+.companions-catalog__list {
+  padding-top: 38px;
+}
+
+.companions-catalog__card {
+  border-radius: 20px;
 }

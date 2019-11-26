@@ -4,8 +4,7 @@
 }
 
 .developers__title {
-  @include font-family_default;
-  font-size: 16px;
+  font-size: $text-size_default;
   line-height: 22px;
   font-weight: 400;
   color: $text-color_primary;
