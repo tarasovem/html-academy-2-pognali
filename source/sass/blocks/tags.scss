@@ -1,0 +1,15 @@
+.tags {
+  list-style: none;
+}
+
+
+.tags__item {
+  color: $text-color_primary;
+  font-size: $text-size_default;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.tags__item_small {
+  font-size: 15px;
+}

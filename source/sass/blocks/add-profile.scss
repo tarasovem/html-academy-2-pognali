@@ -1,0 +1,42 @@
+.add-profile {
+  position: relative;
+  background-color: $bg-color_secondary;
+
+  &::after {
+    @include section-border-radius_bottom;
+  }
+}
+
+.add-profile__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 70px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.add-profile__item {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-size: $text-size_default;
+  line-height: 22px;
+  font-weight: 300;
+  color: $text-color_primary;
+}
+
+.add-profile__price {
+  display: inline-flex;
+}
+
+.add-profile__section-title {
+  padding-top: 80px;
+  padding-right: 165px;
+  padding-bottom: 44px;
+}
+
+.add-profile__button {
+  display: inline-flex;
+  font-size: $text-size_default;
+  background-color: $bg-color_transparent;
+  padding-top: 30px;
+}

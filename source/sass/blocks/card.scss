@@ -1,0 +1,50 @@
+.card {
+  background-color: $bg-color_light;
+  border-radius: 10px;
+}
+
+.card__subject {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  color: $text-color_dark;
+}
+
+.card__subject_size_small {
+  font-size: 20px;
+}
+
+.card__followers {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: $text-color_darker;
+  text-transform: uppercase;
+}
+
+.card__description {
+  color: $text-color_primary;
+  opacity: 0.3;
+  font-weight: 500;
+}
+
+.card__counter {
+  margin-bottom: 0;
+  color: $text-color_primary;
+  opacity: 0.3;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.card__subtitle {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $text-color_primary;
+}
+
+.card__preview {
+  overflow: hidden;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}

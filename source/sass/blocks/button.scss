@@ -1,0 +1,19 @@
+.button {
+  background-color: $bg-color_accent_lighter;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 18px;
+  color: $text-color_dark;
+  border-radius: 10px;
+}
+
+.button_type_view-all {
+  display: block;
+  padding-top: 14px;
+  text-align: center;
+  background-color: $bg-color_transparent;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 30px;
+}

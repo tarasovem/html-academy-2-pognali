@@ -1,0 +1,28 @@
+.contacts {
+  display: inline-flex;
+  list-style: none;
+}
+
+.contacts__link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  line-height: 22px;
+  font-weight: 700;
+  color: $text-color_darker;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.contacts__link_icon_phone {
+  background-color: $bg-color_accent_dark;
+}
+
+.contacts__link_icon_mail {
+  background-color: $bg-color_accent_light;
+}
+
+.contacts__link_type_with-title {
+  font-size: $text-size_default;
+}

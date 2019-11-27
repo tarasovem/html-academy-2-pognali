@@ -1,0 +1,40 @@
+.directions {
+  position: relative;
+  background-color: $bg-color_secondary;
+
+  &::after {
+    @include section-border-radius_bottom;
+  }
+}
+
+.directions__description {
+  font-size: $text-size_default;
+  font-weight: 300;
+  line-height: 22px;
+  color: $text-color_primary;
+}
+
+.directions__section-title {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.directions__text {
+  margin-bottom: 66px;
+  padding-right: 70px;
+  padding-left: 50px;
+}
+
+.directions__list {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.directions__card {
+  margin-bottom: 10px;
+}
+
+.directions__button {
+  margin: 25px 25px 0;
+  padding: 24px;
+}

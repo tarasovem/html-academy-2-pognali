@@ -1,0 +1,15 @@
+.developers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.developers__title {
+  font-size: $text-size_default;
+  line-height: 22px;
+  font-weight: 400;
+  color: $text-color_primary;
+}
+
+.developers__link {
+  font-size: 0;
+}

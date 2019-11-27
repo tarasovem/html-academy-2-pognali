@@ -1,0 +1,19 @@
+.user-list {
+  display: inline-block;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.user-list__item {
+  display: inline-block;
+  padding: 12px 38px;
+  border-radius: 21px;
+  background-color: $bg-color_accent_lighter;
+}
+
+.user-list__link {
+  color: $text-color_dark;
+  font-size: 17px;
+  text-transform: uppercase;
+}

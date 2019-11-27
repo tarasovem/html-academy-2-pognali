@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Погнали</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header class="page-header">
-      <a class="logo page-header__logo" href="index.html">Погнали?</a>
-      <nav class="main-nav">
+      <a class="logo page-header__logo" href="index.html">
+        <img src="img/logo-mobile-white@1x.png" alt="Логотип сервиса" width="100" height="19">
+      </a>
+      <nav class="main-nav" style="display: none;">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="site-list main-nav__site-list">
@@ -23,7 +27,7 @@
           </ul>
           <ul class="user-list main-nav__user-list">
             <li class="user-list__item">
-              <a class="user-list__link" href="login.html">Авторизация</a>
+              <a class="button user-list__link" href="login.html">Авторизация</a>
             </li>
           </ul>
           <ul class="contacts main-nav__contacts">
@@ -52,57 +56,63 @@
       <h1 class="page-main__title">Попутчики</h1>
       <section class="companions-catalog">
         <h2 class="visually-hidden">Каталог попутчиков</h2>
-        <div class="cards companions-catalog__cards">
-          <article class="cards__item">
-            <div class="cards__avatar">
+        <div class="companions-catalog__list">
+          <article class="card companions-catalog__card">
+            <div class="card__avatar">
               <img src="https://via.placeholder.com/70x70" alt="Аватар пользователя" width="70" height="70">
-              <div class="cards__like cards__like_status_liked"></div>
+              <div class="card__like card__like_status_liked"></div>
             </div>
-            <div class="cards__subject cards__subject_status_offline">Таня Фирсова</div>
-            <p class="cards__followers">1,5 M</p>
+            <div class="card__subject card__subject_size_small card__subject_status_offline">Таня Фирсова</div>
+            <p class="card__followers">1,5 M</p>
             <ul class="tags">
-              <li class="tags__item">#ЗОЖ</li>
-              <li class="tags__item">#ПП</li>
-              <li class="tags__item">#Фитнес</li>
-              <li class="tags__item">#пляж</li>
-              <li class="tags__item">#авокадо</li>
-              <li class="tags__item">#смузи</li>
+              <li class="tags__item tags__item_small">#ЗОЖ</li>
+              <li class="tags__item tags__item_small">#ПП</li>
+              <li class="tags__item tags__item_small">#Фитнес</li>
+              <li class="tags__item tags__item_small">#пляж</li>
+              <li class="tags__item tags__item_small">#авокадо</li>
+              <li class="tags__item tags__item_small">#смузи</li>
             </ul>
-            <p class="cards__subtitle">хочет посетить:</p>
-            <ul class="countries cards__countries">
+            <p class="card__subtitle">хочет посетить:</p>
+            <ul class="countries card__countries">
               <li class="countries__item">
-                <div class="flag flag_country_sri-lanka"></div>
-                <p class="countries__description">Шри Ланка</p>
+                <div class="flag countries__flag">
+                  <img src="https://via.placeholder.com/35x24" alt="Флаг Шри Ланки" width="35" height="24">
+                  <p class="countries__description">Шри Ланка</p>
+                </div>
               </li>
               <li class="countries__item">
-                <div class="flag flag_country_thailand"></div>
-                <p class="countries__description">Тайланд</p>
+                <div class="flag countries__flag">
+                  <img src="https://via.placeholder.com/35x24" alt="Флаг Тайланда" width="35" height="24">
+                  <p class="countries__description">Тайланд</p>
+                </div>
               </li>
               <li class="countries__item">
-                <div class="flag flag_country_seychelles"></div>
-                <p class="countries__description">Сейшелы</p>
+                <div class="flag countries__flag">
+                  <img src="https://via.placeholder.com/35x24" alt="Флаг Сейшел" width="35" height="24">
+                  <p class="countries__description">Сейшелы</p>
+                </div>
               </li>
             </ul>
-            <p class="cards__subtitle">транспорт:</p>
-            <ul class="transports cards__transports transports_type_rounded">
+            <p class="card__subtitle">транспорт:</p>
+            <ul class="transports card__transports transports_type_rounded">
               <li class="transports__item transports__item_icon_plane transports__item_status_active">Самолет</li>
               <li class="transports__item transports__item_icon_bus">Автобус</li>
               <li class="transports__item transports__item_icon_bike">Велосипед</li>
               <li class="transports__item transports__item_icon_run">Бег</li>
             </ul>
-            <p class="cards__subtitle">левел:</p>
-            <div class="level cards__level level_type_without-title">
-              <div class="level__count">99</div>
+            <p class="card__subtitle">левел:</p>
+            <div class="level card__level level_type_without-title">
+              <div class="level__count level__count_theme_dark">99</div>
             </div>
             <a class="button button_type_simple" href="#">Позвать!</a>
           </article>
-          <article class="cards__item">
-            <div class="cards__avatar">
+          <article class="card companions-catalog__card">
+            <div class="card__avatar">
               <img src="https://via.placeholder.com/70x70" alt="Аватар пользователя" width="70" height="70">
-              <div class="cards__like cards__like_status_liked"></div>
+              <div class="card__like card__like_status_liked"></div>
             </div>
-            <div class="cards__subject cards__subject_status_offline">Петя Демин</div>
-            <p class="cards__followers">150</p>
+            <div class="card__subject card__subject_status_offline">Петя Демин</div>
+            <p class="card__followers">150</p>
             <ul class="tags">
               <li class="tags__item">#бургер</li>
               <li class="tags__item">#бар</li>
@@ -110,37 +120,41 @@
               <li class="tags__item">#концерт</li>
               <li class="tags__item">#крафт</li>
             </ul>
-            <p class="cards__subtitle">хочет посетить:</p>
-            <ul class="countries cards__countries">
+            <p class="card__subtitle">хочет посетить:</p>
+            <ul class="countries card__countries">
               <li class="countries__item">
-                <div class="flag flag_country_belgium"></div>
-                <p class="countries__description">Бельгия</p>
+                <div class="flag countries__flag">
+                  <img src="https://via.placeholder.com/35x24" alt="Флаг Бельгии" width="35" height="24">
+                  <p class="countries__description">Бельгия</p>
+                </div>
               </li>
               <li class="countries__item">
-                <div class="flag flag_country_czech"></div>
-                <p class="countries__description">Чехия</p>
+                <div class="flag countries__flag">
+                  <img src="https://via.placeholder.com/35x24" alt="Флаг Шри Чехии" width="35" height="24">
+                  <p class="countries__description">Чехия</p>
+                </div>
               </li>
             </ul>
-            <p class="cards__subtitle">транспорт:</p>
-            <ul class="transports cards__transports transports_type_rounded">
+            <p class="card__subtitle">транспорт:</p>
+            <ul class="transports card__transports transports_type_rounded">
               <li class="transports__item transports__item_icon_plane transports__item_status_active">Самолет</li>
               <li class="transports__item transports__item_icon_bus transports__item_status_active">Автобус</li>
               <li class="transports__item transports__item_icon_bike">Велосипед</li>
               <li class="transports__item transports__item_icon_run transports__item_status_active">Бег</li>
             </ul>
-            <p class="cards__subtitle">левел:</p>
-            <div class="level cards__level level_type_without-title">
+            <p class="card__subtitle">левел:</p>
+            <div class="level card__level level_type_without-title">
               <div class="level__count">80</div>
             </div>
             <a class="button button_type_simple" href="#">Позвать!</a>
           </article>
-          <article class="cards__item">
-            <div class="cards__avatar">
+          <article class="card companions-catalog__card">
+            <div class="card__avatar">
               <img src="https://via.placeholder.com/70x70" alt="Аватар пользователя" width="70" height="70">
-              <div class="cards__like cards__like_status_liked"></div>
+              <div class="card__like card__like_status_liked"></div>
             </div>
-            <div class="cards__subject cards__subject_status_offline">Марк Смолов</div>
-            <p class="cards__followers">1700</p>
+            <div class="card__subject card__subject_status_offline">Марк Смолов</div>
+            <p class="card__followers">1700</p>
             <ul class="tags">
               <li class="tags__item">#рэп</li>
               <li class="tags__item">#тату</li>
@@ -148,76 +162,97 @@
               <li class="tags__item">#кроссовки</li>
               <li class="tags__item">#суприм</li>
             </ul>
-            <p class="cards__subtitle">хочет посетить:</p>
-            <ul class="countries cards__countries">
+            <p class="card__subtitle">хочет посетить:</p>
+            <ul class="countries card__countries">
               <li class="countries__item">
-                <div class="flag flag_country_usa"></div>
-                <p class="countries__description">США</p>
+                <div class="flag countries__flag">
+                  <img src="https://via.placeholder.com/35x24" alt="Флаг США" width="35" height="24">
+                  <p class="countries__description">США</p>
+                </div>
               </li>
               <li class="countries__item">
-                <div class="flag flag_country_australia"></div>
-                <p class="countries__description">Австралия</p>
+                <div class="flag countries__flag">
+                  <img src="https://via.placeholder.com/35x24" alt="Флаг Австралии" width="35" height="24">
+                  <p class="countries__description">Австралия</p>
+                </div>
               </li>
               <li class="countries__item">
-                <div class="flag flag_country_dominica"></div>
-                <p class="countries__description">Доминикана</p>
+                <div class="flag countries__flag">
+                  <img src="https://via.placeholder.com/35x24" alt="Флаг Доминиканы" width="35" height="24">
+                  <p class="countries__description">Доминикана</p>
+                </div>
               </li>
             </ul>
-            <p class="cards__subtitle">транспорт:</p>
-            <ul class="transports cards__transports transports_type_rounded">
+            <p class="card__subtitle">транспорт:</p>
+            <ul class="transports card__transports transports_type_rounded">
               <li class="transports__item transports__item_icon_plane transports__item_status_active">Самолет</li>
               <li class="transports__item transports__item_icon_bus">Автобус</li>
               <li class="transports__item transports__item_icon_bike transports__item_status_active">Велосипед</li>
               <li class="transports__item transports__item_icon_run">Бег</li>
             </ul>
-            <p class="cards__subtitle">левел:</p>
-            <div class="level cards__level level_type_without-title">
+            <p class="card__subtitle">левел:</p>
+            <div class="level card__level level_type_without-title">
               <div class="level__count">25</div>
             </div>
             <a class="button button_type_simple" href="#">Позвать!</a>
           </article>
-          <article class="cards__item">
-            <div class="cards__avatar">
+          <article class="card companions-catalog__card">
+            <div class="card__avatar">
               <img src="https://via.placeholder.com/70x70" alt="Аватар пользователя" width="70" height="70">
-              <div class="cards__like cards__like_status_liked"></div>
+              <div class="card__like card__like_status_liked"></div>
             </div>
-            <div class="cards__subject cards__subject_status_offline">Лариса Роговая</div>
-            <p class="cards__followers">23</p>
+            <div class="card__subject card__subject_status_offline">Лариса Роговая</div>
+            <p class="card__followers">23</p>
             <ul class="tags">
               <li class="tags__item">#образование</li>
               <li class="tags__item">#карьера</li>
               <li class="tags__item">#учеба</li>
               <li class="tags__item">#линкедин</li>
             </ul>
-            <p class="cards__subtitle">хочет посетить:</p>
-            <ul class="countries cards__countries">
+            <p class="card__subtitle">хочет посетить:</p>
+            <ul class="countries card__countries">
               <li class="countries__item">
-                <div class="flag flag_country_united-kingdom"></div>
-                <p class="countries__description">Великобритания</p>
+                <div class="flag countries__flag">
+                  <img src="https://via.placeholder.com/35x24" alt="Флаг Великобритании" width="35" height="24">
+                  <p class="countries__description">Великобритания</p>
+                </div>
               </li>
               <li class="countries__item">
-                <div class="flag flag_country_germany"></div>
-                <p class="countries__description">Германия</p>
+                <div class="flag countries__flag">
+                  <img src="https://via.placeholder.com/35x24" alt="Флаг Германии" width="35" height="24">
+                  <p class="countries__description">Германия</p>
+                </div>
               </li>
             </ul>
-            <p class="cards__subtitle">транспорт:</p>
-            <ul class="transports cards__transports transports_type_rounded">
+            <p class="card__subtitle">транспорт:</p>
+            <ul class="transports card__transports transports_type_rounded">
               <li class="transports__item transports__item_icon_plane transports__item_status_active">Самолет</li>
               <li class="transports__item transports__item_icon_bus transports__item_status_active">Автобус</li>
               <li class="transports__item transports__item_icon_bike">Велосипед</li>
               <li class="transports__item transports__item_icon_run">Бег</li>
             </ul>
-            <p class="cards__subtitle">левел:</p>
-            <div class="level cards__level level_type_without-title">
+            <p class="card__subtitle">левел:</p>
+            <div class="level card__level level_type_without-title">
               <div class="level__count">50</div>
             </div>
             <a class="button button_type_simple" href="#">Позвать!</a>
           </article>
         </div>
+        <a class="button button_type_view-all" href="#">Показать еще</a>
+        <ul class="pagination">
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">Назад</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">Вперед</a>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="page-footer">
-      <a class="logo page-footer__logo" href="index.html">Погнали?</a>
+      <a class="logo page-footer__logo" href="index.html">
+        <img src="img/logo-mobile-blue@1x.png" alt="Логотип сервиса" width="100" height="19">
+      </a>
       <ul class="social page-footer__social">
         <li class="social__item">
           <a class="social__link" href="">Facebook</a>
