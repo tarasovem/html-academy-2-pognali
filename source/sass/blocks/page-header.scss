@@ -1,5 +1,5 @@
 .page-header {
-  padding: 27px 25px;
+  padding: 27px 0;
   background-color: $bg-color_primary;
   box-sizing: border-box;
 }
@@ -8,6 +8,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-sizing: border-box;
 
   @include container(320px);
 }
