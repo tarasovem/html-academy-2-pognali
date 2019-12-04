@@ -17,10 +17,18 @@
 
 .contacts__link_icon_phone {
   background-color: $bg-color_accent_dark;
+  background-image: url("../img/topmenu-phone.svg");
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .contacts__link_icon_mail {
   background-color: $bg-color_accent_light;
+  background-image: url("../img/topmenu-mail.svg");
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .contacts__link_type_with-title {

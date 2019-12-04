@@ -2,13 +2,13 @@
   position: relative;
   background-color: $bg-color_primary_light;
   background-image:
-    url("../../img/smolov-back-desktop@1x.png"),
-    url("../../img/blue_back.png"),
-    url("../../img/rogovaya-back-mobile@1x.png");
+    url("../img/smolov-back-desktop@1x.png"),
+    url("../img/blue_back.png"),
+    url("../img/rogovaya-back-mobile@1x.png");
   background-position:
-    right 25px top 76px,
-    left -19px top 76px,
-    left -10px top 388px;
+    right calc(50% - 64px) top 66px,
+    left calc(50% - 113px) top 66px,
+    left calc(50% - 134px) top 330px;
   background-repeat: no-repeat;
 
   &::after {
@@ -16,21 +16,27 @@
   }
 }
 
+.companions__wrapper {
+  box-sizing: border-box;
+
+  @include container(320px);
+}
+
 .companions__section-title {
-  margin-bottom: 26px;
-  padding-top: 110px;
+  margin-bottom: 18px;
+  padding-top: 100px;
   padding-right: 50px;
   padding-left: 50px;
 }
 
 .companions__text {
-  margin-bottom: 24px;
+  margin-bottom: 18px;
   padding-right: 50px;
   padding-left: 50px;
 }
 
 .companions__list {
-  padding-top: 30px;
+  padding-top: 35px;
   padding-right: 25px;
   padding-left: 25px;
 }
@@ -41,7 +47,14 @@
 }
 
 .companions__card {
+  position: relative;
   margin-bottom: 10px;
+}
+
+.companions__level {
+  position: absolute;
+  top: 16px;
+  left: 17px;
 }
 
 .companions-catalog__list {

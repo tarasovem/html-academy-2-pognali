@@ -1,5 +1,11 @@
 .tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 40px;
+  padding-right: 40px;
   list-style: none;
+  margin: 0;
 }
 
 

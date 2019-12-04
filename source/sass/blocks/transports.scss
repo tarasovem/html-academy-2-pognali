@@ -1,4 +1,23 @@
 .transports {
+  display: flex;
+  padding-left: 0;
+  justify-content: center;
   list-style: none;
   font-size: 0;
+}
+
+.transports__item {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.transports__icon {
+  width: 24px;
+  height: 21px;
+  opacity: 0.15;
+
+  &_active {
+    opacity: 1;
+    fill: $bg-color_primary_lighter;
+  }
 }

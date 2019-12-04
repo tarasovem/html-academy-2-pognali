@@ -1,10 +1,20 @@
 .page-footer {
   position: relative;
-  padding: 58px 25px 14px;
+  padding: 6px 25px 14px;
   text-align: center;
   background-color: $bg-color_light;
 
   &::before {
     @include section-border-radius_top;
   }
+}
+
+.page-footer__wrapper {
+  box-sizing: border-box;
+
+  @include container(320px);
+}
+
+.page-footer__social {
+  margin-bottom: 37px;
 }

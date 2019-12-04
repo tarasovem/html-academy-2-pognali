@@ -1,5 +1,17 @@
 .level {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
   color: $text-color_light;
+
+  &_bg_grey {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
 }
 
 .level__count {

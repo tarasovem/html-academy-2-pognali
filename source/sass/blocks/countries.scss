@@ -1,4 +1,10 @@
 .countries {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   list-style: none;
 }
 
@@ -8,4 +14,16 @@
   font-weight: 500;
   text-transform: uppercase;
   color: $text-color_dark;
+}
+
+.countries__item {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-right: 19px;
+  }
+}
+
+.countries__flag {
+  display: flex;
 }

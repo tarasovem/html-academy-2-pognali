@@ -1,15 +1,23 @@
 .developers {
   display: flex;
   justify-content: space-between;
-}
-
-.developers__title {
+  align-items: center;
+  padding: 14px 25px;
+  text-decoration: none;
   font-size: $text-size_default;
-  line-height: 22px;
   font-weight: 400;
   color: $text-color_primary;
+  border-top: 1px solid $border-color_grey;
 }
 
 .developers__link {
-  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.developers__logo {
+  width: 27px;
+  height: 34px;
+  fill: $bg-color_primary_lighter;
 }

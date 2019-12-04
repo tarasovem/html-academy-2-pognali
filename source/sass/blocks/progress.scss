@@ -1,17 +1,24 @@
 .progress {
+  box-sizing: border-box;
   background-image: linear-gradient($bg-color_primary 80px, $bg-color_primary_light 80px);
+}
+
+.progress__wrapper {
+  @include container(320px);
 }
 
 .progress__list {
   margin: 0;
-  padding-left: 0;
+  padding-right: 25px;
+  padding-left: 25px;
   color: $text-color_darker;
   list-style: none;
+  counter-reset: reviews 0;
 }
 
 .progress__item {
   position: relative;
-  padding: 10px 102px 30px 20px;
+  padding: 10px 110px 30px 20px;
   font-size: 18px;
   font-weight: 700;
 
@@ -25,6 +32,16 @@
     background-color: inherit;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+  }
+
+  &::after {
+    content: counter(reviews, decimal);
+    counter-increment: reviews 1;
+    display: inline-block;
+    position: absolute;
+    top: 13px;
+    right: 21px;
+    color: $text-color_light;
   }
 }
 

@@ -8,20 +8,55 @@
 }
 
 .add-profile__list {
+  width: 200px;
   margin-top: 0;
   margin-bottom: 0;
-  padding-right: 70px;
   padding-left: 0;
   list-style: none;
+  counter-reset: add-profile 0;
 }
 
 .add-profile__item {
-  padding-top: 14px;
-  padding-bottom: 14px;
+  position: relative;
+  padding-top: 9px;
+  padding-bottom: 9px;
   font-size: $text-size_default;
   line-height: 22px;
   font-weight: 300;
   color: $text-color_primary;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+  &:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  &::after {
+    content: counter(add-profile, decimal);
+    counter-increment: add-profile 1;
+    position: absolute;
+    top: 3px;
+    right: -45px;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    font-size: $text-size_default;
+    line-height: 36px;
+    color: $text-color_light;
+  }
+
+  &:nth-child(1)::after {
+    background-color: $bg-color_accent_primary;
+  }
+
+  &:nth-child(2)::after {
+    background-color: $bg-color_accent_light;
+  }
+
+  &:nth-child(3)::after {
+    background-color: $bg-color_accent_lighter;
+  }
 }
 
 .add-profile__price {
@@ -39,4 +74,16 @@
   font-size: $text-size_default;
   background-color: $bg-color_transparent;
   padding-top: 30px;
+}
+
+.add-profile__wrapper {
+  box-sizing: border-box;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-image: url("../img/rates@1x.png");
+  background-repeat: no-repeat;
+  background-position: top 67px right 26px;
+  background-size: 99px 99px;
+
+  @include container(320px);
 }

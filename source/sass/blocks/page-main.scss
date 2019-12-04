@@ -1,12 +1,29 @@
 .page-main {
-  background-color: $bg-color_primary_light;
+  background-color: $bg-color_primary;
+  box-sizing: border-box;
 }
 
 .page-main__wrapper {
+  position: relative;
   background-color: $bg-color_primary;
   background-image: url("../../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top -65px center;
+
+  @include container(320px);
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 49px;
+    z-index: 0;
+    width: 192px;
+    height: 255px;
+    background-image: url("../img/traveller-illustration-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
 
 .page-main__slogan {
@@ -44,7 +61,10 @@
 }
 
 .page-main__review {
-  padding: 50px 50px 34px;
+  padding: 50px 100px 34px 50px;
+  box-sizing: border-box;
+
+  @include container(320px);
 }
 
 .page-main__progress {

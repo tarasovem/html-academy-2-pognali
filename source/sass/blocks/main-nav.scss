@@ -1,8 +1,16 @@
 .main-nav {
-  background-color: $bg-color_light;
+  background-color: $bg-color_transparent;
+  display: inline-block;
 }
 
 .main-nav__toggle {
   font-size: 0;
+  width: 25px;
+  height: 11px;
   background-color: $bg-color_transparent;
+  background-image: url("../img/menu.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border: none;
+  cursor: pointer;
 }

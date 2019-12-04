@@ -1,23 +1,29 @@
 .about {
   position: relative;
-  padding-right: 57px;
-  padding-left: 50px;
   background-color: $bg-color_primary_light;
   background-image:
     url("../../img/about-mobile@1x.png"),
     url("../../img/blue_back.png");
   background-repeat: no-repeat;
   background-position:
-    bottom -30px center,
-    top 40px left -19px;
+    top 47px center,
+    top 47px left calc(50% - 118px);
 
   &::after {
     background-image: inherit;
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: bottom -15px center;
 
     @include section-border-radius_bottom;
   }
+}
+
+.about__wrapper {
+  padding-right: 57px;
+  padding-left: 50px;
+  box-sizing: border-box;
+
+  @include container(320px);
 }
 
 .about__description {

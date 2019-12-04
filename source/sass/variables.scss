@@ -8,6 +8,8 @@ $color_neon-carrot: #ff8d30;
 $color_sunshade: #ffa530;
 $color_sunglow: #ffbd30;
 $color_mustard: #ffd74b;
+$color_foroly: #f97676;
+$color_lima: #81e31e;
 $color_transparent: transparent;
 
 $bg-color_primary: $color_big-stone;
@@ -19,6 +21,8 @@ $bg-color_accent_lighter: $color_mustard;
 $bg-color_accent_light: $color_sunglow;
 $bg-color_accent_primary: $color_sunshade;
 $bg-color_accent_dark: $color_neon-carrot;
+$bg-color_status_offline: $color_foroly;
+$bg-color_status_online: $color_lima;
 $bg-color_transparent: $color_transparent;
 
 $text-color_light: $color_white;
@@ -28,3 +32,8 @@ $text-color_darker: $color_big-stone;
 $text-color_accent: $color_neon-carrot;
 
 $text-size_default: 16px;
+
+$border-color_grey: $color_whisper;
+
+$tablet-width: 768px;
+$desktop-width: 1200px;
