@@ -1,20 +1,48 @@
 .page-header {
   padding: 27px 0;
-  background-color: $bg-color_primary;
+  background-color: $color_big-stone;
   box-sizing: border-box;
 }
 
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding-left: 25px;
   padding-right: 25px;
   box-sizing: border-box;
 
-  @include container(320px);
+  @include container($mobile-width);
 }
 
 .page-header__logo img {
   vertical-align: middle;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .page-header__wrapper {
+    padding-right: 40px;
+    padding-left: 40px;
+    justify-content: center;
+    position: relative;
+
+    @include container($tablet-width);
+  }
+
+  .page-header__logo {
+    position: absolute;
+    left: 40px;
+  }
+}
+
+/*
+@media (min-width: $desktop-width) {
+  padding-right: 60px;
+  padding-left: 60px;
+
+  @include container($desktop-width);
+}*/

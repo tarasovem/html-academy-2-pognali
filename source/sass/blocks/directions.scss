@@ -1,6 +1,6 @@
 .directions {
   position: relative;
-  background-color: $bg-color_secondary;
+  background-color: $color_whisper;
 
   &::after {
     @include section-border-radius_bottom;
@@ -17,7 +17,7 @@
   font-size: $text-size_default;
   font-weight: 300;
   line-height: 22px;
-  color: $text-color_primary;
+  color: $color_tundora;
 }
 
 .directions__section-title {

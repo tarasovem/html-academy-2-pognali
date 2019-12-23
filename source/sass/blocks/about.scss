@@ -1,6 +1,6 @@
 .about {
   position: relative;
-  background-color: $bg-color_primary_light;
+  background-color: $color_blue-whale;
   background-image:
     url("../../img/about-mobile@1x.png"),
     url("../../img/blue_back.png");
@@ -27,7 +27,7 @@
 }
 
 .about__description {
-  color: $text-color_light;
+  color: $color_white;
   font-size: $text-size_default;
   line-height: 22px;
 }

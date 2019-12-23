@@ -1,6 +1,6 @@
 .progress {
   box-sizing: border-box;
-  background-image: linear-gradient($bg-color_primary 80px, $bg-color_primary_light 80px);
+  background-image: linear-gradient($color_big-stone 80px, $color_blue-whale 80px);
 }
 
 .progress__wrapper {
@@ -11,7 +11,7 @@
   margin: 0;
   padding-right: 25px;
   padding-left: 25px;
-  color: $text-color_darker;
+  color: $color_big-stone;
   list-style: none;
   counter-reset: reviews 0;
 }
@@ -41,24 +41,24 @@
     position: absolute;
     top: 13px;
     right: 21px;
-    color: $text-color_light;
+    color: $color_white;
   }
 }
 
 .progress__item_type_first {
-  background-color: $bg-color-accent_dark;
+  background-color: $color_neon-carrot;
 }
 
 .progress__item_type_second {
-  background-color: $bg-color-accent_primary;
+  background-color: $color_sunshade;
 }
 
 .progress__item_type_third {
-  background-color: $bg-color-accent_light;
+  background-color: $color_sunglow;
 }
 
 .progress__item_type_fourth {
-  background-color: $bg-color-accent_lighter;
+  background-color: $color_mustard;
 }
 
 .progress__item_order_last {

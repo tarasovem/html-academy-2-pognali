@@ -7,7 +7,7 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  color: $text-color_light;
+  color: $color_white;
 
   &_bg_grey {
     background-color: rgba(0, 0, 0, 0.6);
@@ -21,7 +21,7 @@
 }
 
 .level__count_theme_dark {
-  color: $text-color_dark;
+  color: $color_cello;
 }
 
 .level__title {

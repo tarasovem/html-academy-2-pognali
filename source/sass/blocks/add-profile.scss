@@ -1,6 +1,6 @@
 .add-profile {
   position: relative;
-  background-color: $bg-color_secondary;
+  background-color: $color_whisper;
 
   &::after {
     @include section-border-radius_bottom;
@@ -23,7 +23,7 @@
   font-size: $text-size_default;
   line-height: 22px;
   font-weight: 300;
-  color: $text-color_primary;
+  color: $color_tundora;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 
   &:last-child {
@@ -43,19 +43,19 @@
     border-radius: 50%;
     font-size: $text-size_default;
     line-height: 36px;
-    color: $text-color_light;
+    color: $color_white;
   }
 
   &:nth-child(1)::after {
-    background-color: $bg-color_accent_primary;
+    background-color: $color_sunshade;
   }
 
   &:nth-child(2)::after {
-    background-color: $bg-color_accent_light;
+    background-color: $color_sunglow;
   }
 
   &:nth-child(3)::after {
-    background-color: $bg-color_accent_lighter;
+    background-color: $color_mustard;
   }
 }
 
@@ -72,7 +72,7 @@
 .add-profile__button {
   display: inline-flex;
   font-size: $text-size_default;
-  background-color: $bg-color_transparent;
+  background-color: transparent;
   padding-top: 30px;
 }
 

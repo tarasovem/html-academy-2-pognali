@@ -10,13 +10,13 @@
   font-size: 0;
   line-height: 22px;
   font-weight: 700;
-  color: $text-color_darker;
+  color: $color_big-stone;
   text-decoration: none;
   border-radius: 50%;
 }
 
 .contacts__link_icon_phone {
-  background-color: $bg-color_accent_dark;
+  background-color: $color_neon-carrot;
   background-image: url("../img/topmenu-phone.svg");
   background-size: 18px 18px;
   background-repeat: no-repeat;
@@ -24,7 +24,7 @@
 }
 
 .contacts__link_icon_mail {
-  background-color: $bg-color_accent_light;
+  background-color: $color_sunglow;
   background-image: url("../img/topmenu-mail.svg");
   background-size: 18px 18px;
   background-repeat: no-repeat;

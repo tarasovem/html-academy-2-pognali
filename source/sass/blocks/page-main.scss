@@ -1,11 +1,11 @@
 .page-main {
-  background-color: $bg-color_primary;
+  background-color: $color_big-stone;
   box-sizing: border-box;
 }
 
 .page-main__wrapper {
   position: relative;
-  background-color: $bg-color_primary;
+  background-color: $color_big-stone;
   background-image: url("../../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top -65px center;
@@ -29,7 +29,7 @@
 .page-main__slogan {
   display: inline-flex;
   padding: 25px 40px 267px;
-  color: $text-color_light;
+  color: $color_white;
   font-size: 36px;
   line-height: 40px;
   font-weight: 700;
@@ -41,8 +41,8 @@
   margin: 0;
   padding-top: 10px;
   padding-left: 25px;
-  color: $text-color_light;
-  background-color: $bg-color_primary;
+  color: $color_white;
+  background-color: $color_big-stone;
 
   &::after {
     @include section-border-radius_bottom(20px);
@@ -89,4 +89,24 @@
 
 .page-main__add-profile {
   padding-bottom: 6px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__wrapper {
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-left: 40px;
+
+    @include container($tablet-width);
+  }
+
+  .page-main__wrapper-user {
+    position: absolute;
+    top: -116px;
+    right: 40px;
+  }
+
+  .page-main__contacts {
+    visibility: hidden;
+  }
 }

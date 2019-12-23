@@ -1,11 +1,11 @@
 .button {
   display: flex;
-  background-color: $bg-color_accent_lighter;
+  background-color: $color_mustard;
   font-weight: 700;
   text-decoration: none;
   font-size: 18px;
   line-height: 18px;
-  color: $text-color_dark;
+  color: $color_cello;
   border-radius: 10px;
 
   &_arrow-right {
@@ -15,7 +15,7 @@
       content: "";
       width: 10px;
       height: 14px;
-      background-image: url(../img/triangle-arrow-right.svg);
+      background-image: url("../img/triangle-arrow-right.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
     }
@@ -26,7 +26,7 @@
   display: block;
   padding-top: 14px;
   text-align: center;
-  background-color: $bg-color_transparent;
+  background-color: transparent;
   text-transform: uppercase;
   font-size: 17px;
   line-height: 30px;

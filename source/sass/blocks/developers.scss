@@ -6,8 +6,8 @@
   text-decoration: none;
   font-size: $text-size_default;
   font-weight: 400;
-  color: $text-color_primary;
-  border-top: 1px solid $border-color_grey;
+  color: $color_tundora;
+  border-top: 1px solid $color_whisper;
   box-sizing: border-box;
 }
 
@@ -20,5 +20,5 @@
 .developers__logo {
   width: 27px;
   height: 34px;
-  fill: $bg-color_primary_lighter;
+  fill: $color_cello;
 }
