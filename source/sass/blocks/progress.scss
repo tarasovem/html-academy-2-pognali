@@ -8,39 +8,43 @@
 }
 
 .progress__list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding-right: 25px;
   padding-left: 25px;
-  color: $color_big-stone;
   list-style: none;
   counter-reset: reviews 0;
+  color: $color_big-stone;
 }
 
 .progress__item {
-  position: relative;
-  padding: 10px 110px 30px 20px;
   font-size: 18px;
   font-weight: 700;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 110px 30px 20px;
 
   &::before {
-    content: "";
     position: absolute;
     top: -10px;
     left: 0;
     width: 100%;
     height: 10px;
-    background-color: inherit;
-    border-top-right-radius: 10px;
+    content: "";
     border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: inherit;
   }
 
   &::after {
-    content: counter(reviews, decimal);
-    counter-increment: reviews 1;
-    display: inline-block;
     position: absolute;
     top: 13px;
     right: 21px;
+    display: inline-block;
+    content: counter(reviews, decimal);
+    counter-increment: reviews 1;
     color: $color_white;
   }
 }
@@ -63,6 +67,73 @@
 
 .progress__item_order_last {
   padding-bottom: 20px;
-  border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .progress {
+    background-image: linear-gradient(#161c36 47%, #192144 47%);
+  }
+
+  .progress__wrapper {
+    @include container($tablet-width);
+  }
+
+  .progress__item {
+    font-size: 24px;
+    line-height: 24px;
+    width: 50%;
+    padding-top: 11px;
+    padding-bottom: 66px;
+    padding-left: 34px;
+  }
+
+  .progress__item::before {
+    top: -20px;
+    height: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0;
+  }
+
+  .progress__item_type_first::before {
+    width: calc(100% + 20px);
+  }
+
+  .progress__item_type_second::before {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .progress__item_type_third::before {
+    top: auto;
+    right: -20px;
+    bottom: 0;
+    left: auto;
+    width: 20px;
+    height: 100%;
+  }
+
+  .progress__item_type_third {
+    padding-top: 31px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .progress__item_type_fourth {
+    padding-top: 31px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .progress__item_type_fourth::before {
+    display: none;
+  }
+
+  .progress__item::after {
+    font-size: 30px;
+    top: auto;
+    right: auto;
+    bottom: 28px;
+    left: 34px;
+  }
 }
