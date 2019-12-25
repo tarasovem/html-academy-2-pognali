@@ -1,15 +1,15 @@
 .page-header {
+  box-sizing: border-box;
   padding: 27px 0;
   background-color: $color_big-stone;
-  box-sizing: border-box;
 }
 
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
-  padding-left: 25px;
-  padding-right: 25px;
   box-sizing: border-box;
+  padding-right: 25px;
+  padding-left: 25px;
 
   @include container($mobile-width);
 }
@@ -25,24 +25,17 @@
   }
 
   .page-header__wrapper {
+    position: relative;
+    justify-content: center;
     padding-right: 40px;
     padding-left: 40px;
-    justify-content: center;
-    position: relative;
 
     @include container($tablet-width);
   }
 
   .page-header__logo {
     position: absolute;
+    top: -5px;
     left: 40px;
   }
 }
-
-/*
-@media (min-width: $desktop-width) {
-  padding-right: 60px;
-  padding-left: 60px;
-
-  @include container($desktop-width);
-}*/

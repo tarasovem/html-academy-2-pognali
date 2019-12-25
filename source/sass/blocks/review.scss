@@ -1,16 +1,27 @@
 .review {
-  background-color: $color_big-stone;
-  color: $color_white;
   font-size: $text-size_default;
   line-height: 22px;
+  color: $color_white;
+  background-color: $color_big-stone;
 }
 
 .review__blockquote {
+  font-weight: 300;
   margin: 0;
   padding-bottom: 25px;
-  font-weight: 300;
 }
 
 .review__cite {
   font-weight: 700;
+}
+
+@media (min-width: $tablet-width) {
+  .review {
+    background-color: transparent;
+  }
+
+  .review__blockquote {
+    font-size: 28px;
+    line-height: 33px;
+  }
 }

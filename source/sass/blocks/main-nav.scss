@@ -1,6 +1,6 @@
 .main-nav {
   background-color: transparent;
-  display: inline-block;
+  display: inline-flex;
 }
 
 .main-nav__toggle {
@@ -14,9 +14,3 @@
   border: none;
   cursor: pointer;
 }
-
-/*@media (min-width: $tablet-width) {
-  .main-nav__toggle {
-    position: absolute;
-  }
-}*/

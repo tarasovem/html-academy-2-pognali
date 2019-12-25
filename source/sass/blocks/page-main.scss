@@ -1,39 +1,25 @@
 .page-main {
-  background-color: $color_big-stone;
   box-sizing: border-box;
+  background-color: $color_big-stone;
 }
 
 .page-main__wrapper {
   position: relative;
+  box-sizing: border-box;
   background-color: $color_big-stone;
-  background-image: url("../../img/globe-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: top -65px center;
 
   @include container(320px);
-
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 49px;
-    z-index: 0;
-    width: 192px;
-    height: 255px;
-    background-image: url("../img/traveller-illustration-mobile@1x.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+  @include outline();
 }
 
 .page-main__slogan {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
   display: inline-flex;
   padding: 25px 40px 267px;
-  color: $color_white;
-  font-size: 36px;
-  line-height: 40px;
-  font-weight: 700;
   text-align: center;
+  color: $color_white;
 }
 
 .page-main__title {
@@ -50,8 +36,8 @@
 }
 
 .page-main__contacts {
-  padding-left: 0;
   margin: 0;
+  padding-left: 0;
 }
 
 .page-main__wrapper-user {
@@ -61,8 +47,8 @@
 }
 
 .page-main__review {
-  padding: 50px 100px 34px 50px;
   box-sizing: border-box;
+  padding: 50px 100px 34px 50px;
 
   @include container(320px);
 }
@@ -93,7 +79,6 @@
 
 @media (min-width: $tablet-width) {
   .page-main__wrapper {
-    padding-top: 30px;
     padding-right: 40px;
     padding-left: 40px;
 
@@ -102,11 +87,29 @@
 
   .page-main__wrapper-user {
     position: absolute;
-    top: -116px;
+    top: -112px;
     right: 40px;
   }
 
   .page-main__contacts {
     visibility: hidden;
+  }
+
+  .page-main__slogan {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+    display: inline-flex;
+    padding: 25px 130px 438px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .page-main__review {
+    position: absolute;
+    top: 435px;
+    left: 50%;
+    padding: 20px;
+    transform: translateX(-103%);
   }
 }

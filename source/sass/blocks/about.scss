@@ -19,17 +19,17 @@
 }
 
 .about__wrapper {
+  box-sizing: border-box;
   padding-right: 57px;
   padding-left: 50px;
-  box-sizing: border-box;
 
   @include container(320px);
 }
 
 .about__description {
-  color: $color_white;
   font-size: $text-size_default;
   line-height: 22px;
+  color: $color_white;
 }
 
 .about__description_weight_light {
