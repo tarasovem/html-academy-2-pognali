@@ -39,3 +39,13 @@
     left: 40px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    @include container($desktop-width);
+  }
+
+  .page-header {
+    padding-top: 50px;
+  }
+}

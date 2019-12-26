@@ -14,3 +14,38 @@
   border: none;
   cursor: pointer;
 }
+
+@media (min-width: $desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__social {
+    display: none;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .main-nav__contacts {
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .main-nav__site-list {
+    padding-left: 0;
+    margin: 0;
+    order: 1;
+  }
+
+  .main-nav__contacts {
+    order: 2;
+  }
+
+  .main-nav__user-list {
+    order: 3;
+  }
+}

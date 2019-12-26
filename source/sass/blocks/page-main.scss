@@ -116,3 +116,13 @@
     padding-top: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-main__contacts {
+    visibility: visible;
+  }
+
+  .page-main__wrapper-user {
+    display: none;
+  }
+}

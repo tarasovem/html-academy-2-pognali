@@ -10,3 +10,20 @@
   color: $color_big-stone;
   text-decoration: none;
 }
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    display: flex;
+  }
+
+  .site-list__link {
+    color: $color_white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+
+    &:not(:last-child) {
+      margin-right: 38px;
+    }
+  }
+}

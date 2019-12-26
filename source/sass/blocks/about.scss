@@ -1,13 +1,6 @@
 .about {
   position: relative;
   background-color: $color_blue-whale;
-  background-image:
-    url("../../img/about-mobile@1x.png"),
-    url("../../img/blue_back.png");
-  background-repeat: no-repeat;
-  background-position:
-    top 47px center,
-    top 47px left calc(50% - 118px);
 
   &::after {
     background-image: inherit;
@@ -38,4 +31,10 @@
 
 .about__description_weight_bold {
   font-weight: 700;
+}
+
+@media (min-width: $tablet-width) {
+  .about__wrapper {
+    @include container($tablet-width);
+  }
 }
