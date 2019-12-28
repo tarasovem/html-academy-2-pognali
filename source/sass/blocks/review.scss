@@ -30,3 +30,9 @@
     line-height: 25px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .review__blockquote {
+    padding-bottom: 43px;
+  }
+}
