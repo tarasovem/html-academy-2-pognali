@@ -42,10 +42,18 @@
 
 @media (min-width: $desktop-width) {
   .page-header__wrapper {
+    justify-content: flex-end;
+    align-items: center;
+
     @include container($desktop-width);
   }
 
   .page-header {
     padding-top: 50px;
+  }
+
+  .page-header__logo {
+    position: static;
+    margin-right: auto;
   }
 }

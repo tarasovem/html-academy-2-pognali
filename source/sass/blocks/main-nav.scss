@@ -28,21 +28,19 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-end;
   }
 
   .main-nav__contacts {
     padding-left: 0;
-    margin: 0;
+    margin: 0 0 0 300px;
+    order: 2;
   }
 
   .main-nav__site-list {
     padding-left: 0;
-    margin: 0;
+    margin: 0 auto 0 145px;
     order: 1;
-  }
-
-  .main-nav__contacts {
-    order: 2;
   }
 
   .main-nav__user-list {

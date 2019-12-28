@@ -26,4 +26,10 @@
       margin-right: 38px;
     }
   }
+
+  .site-list__item {
+    &:not(:last-child) {
+      margin-right: 36px;
+    }
+  }
 }
