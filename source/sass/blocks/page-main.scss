@@ -125,4 +125,26 @@
   .page-main__wrapper-user {
     display: none;
   }
+
+  .page-main__wrapper {
+    padding-right: 60px;
+    padding-left: 60px;
+
+    @include container($desktop-width);
+  }
+
+  .page-main__slogan {
+    padding-top: 45px;
+    padding-bottom: 130px;
+    padding-left: 70px;
+    width: 400px;
+    text-align: left;
+  }
+
+  .page-main__review {
+    top: 212px;
+    right: 60px;
+    left: auto;
+    padding: 0;
+  }
 }
