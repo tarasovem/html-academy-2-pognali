@@ -6,3 +6,11 @@
   font-weight: 700;
   line-height: 24px;
 }
+
+@media (min-width: $desktop-width) {
+  .section-title {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 45px;
+  }
+}

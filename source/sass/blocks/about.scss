@@ -11,6 +11,10 @@
   }
 }
 
+.about__link {
+  display: none;
+}
+
 .about__wrapper {
   box-sizing: border-box;
   padding-right: 57px;
@@ -36,5 +40,47 @@
 @media (min-width: $tablet-width) {
   .about__wrapper {
     @include container($tablet-width);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about__wrapper {
+    padding-right: 60px;
+    padding-left: 60px;
+
+    @include container($desktop-width);
+  }
+
+  .about__section-title {
+    margin-bottom: 60px;
+    padding-top: 222px;
+  }
+
+  .text_weight_bold.about__text {
+    font-size: 21px;
+    line-height: 25px;
+    width: 410px;
+  }
+
+  .about__text {
+    width: 620px;
+  }
+
+  .about__link {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 274px;
+    height: 80px;
+    min-height: 80px;
+    margin-top: 86px;
+    margin-bottom: 74px;
+
+    &::after {
+      margin-left: 80px;
+    }
   }
 }
