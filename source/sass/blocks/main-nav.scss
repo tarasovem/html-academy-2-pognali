@@ -15,6 +15,10 @@
   cursor: pointer;
 }
 
+.main-nav__wrapper {
+  display: none;
+}
+
 @media (min-width: $desktop-width) {
   .main-nav__toggle {
     display: none;

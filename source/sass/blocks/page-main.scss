@@ -115,6 +115,15 @@
   .page-main__progress {
     padding-top: 0;
   }
+
+  .page-main__about {
+    padding-top: 223px;
+    padding-bottom: 0;
+  }
+
+  .page-main__directions {
+    margin-top: 162px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -134,10 +143,10 @@
   }
 
   .page-main__slogan {
+    width: 400px;
     padding-top: 45px;
     padding-bottom: 130px;
     padding-left: 70px;
-    width: 400px;
     text-align: left;
   }
 
@@ -146,5 +155,9 @@
     right: 60px;
     left: auto;
     padding: 0;
+  }
+
+  .page-main__directions {
+    padding-top: 0;
   }
 }
