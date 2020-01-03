@@ -86,17 +86,16 @@
 
   &::before {
     position: absolute;
+    top: 67px;
+    right: 26px;
     width: 99px;
     height: 99px;
     padding: 0;
-    top: 67px;
-    right: 26px;
     content: "";
     background-image: url("../img/rates@1x.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 99px 99px;
-
   }
 }
 
@@ -168,6 +167,26 @@
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 17px 24px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add-profile__wrapper {
+    padding-left: 130px;
+    padding-right: 405px;
+    padding-bottom: 105px;
+
+    @include container($desktop-width);
+
+    &::before {
+      width: 198px;
+      height: 198px;
+      background-size: 198px 198px;
+      right: 134px;
+      bottom: auto;
+      top: 50%;
+      transform: translateY(-64px);
     }
   }
 }
