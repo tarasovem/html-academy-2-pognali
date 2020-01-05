@@ -1,19 +1,19 @@
 .tags {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  padding-left: 40px;
-  padding-right: 40px;
-  list-style: none;
+  justify-content: center;
   margin: 0;
+  padding-right: 40px;
+  padding-left: 40px;
+  list-style: none;
 }
 
 
 .tags__item {
-  color: $color_tundora;
   font-size: $text-size_default;
-  line-height: 18px;
   font-weight: 400;
+  line-height: 18px;
+  color: $color_tundora;
 }
 
 .tags__item_small {

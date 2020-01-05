@@ -1,7 +1,7 @@
 .countries {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -10,8 +10,10 @@
 
 .countries__description {
   font-size: 15px;
-  line-height: 18px;
   font-weight: 500;
+  line-height: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
   text-transform: uppercase;
   color: $color_cello;
 }

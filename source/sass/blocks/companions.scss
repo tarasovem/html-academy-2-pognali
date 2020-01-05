@@ -53,7 +53,124 @@
 }
 
 .companions-catalog__card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 16px 20px 22px;
   border-radius: 20px;
+
+  .card__avatar {
+    overflow: hidden;
+    width: 70px;
+    height: 70px;
+    margin-right: 16px;
+    border-radius: 50%;
+  }
+
+  .card__like {
+    position: absolute;
+    top: 16px + 70px - 30px;
+    left: 20px + 70px - 30px + 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #edeff6;
+    background-image: url("../img/heart.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 13px 11px;
+  }
+
+  .card__subject {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    min-width: 100px;
+    margin: 0;
+  }
+
+  .card__followers {
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+
+  .card__tags {
+    justify-content: flex-start;
+    width: 170px;
+    margin-top: 12px;
+    margin-left: 8px;
+    padding: 0;
+  }
+
+  .tags__item {
+    margin-right: 4px;
+  }
+
+  .card__subtitle {
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+
+  .card__countries {
+    position: static;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 8px;
+  }
+
+  .countries__flag {
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .countries__description {
+    margin-left: 14px;
+  }
+
+  .card__like_status_liked {
+    background-color: #f9eaea;
+    background-image: url("../img/heart-active.svg");
+  }
+
+  .card__transports {
+    flex: none;
+    margin: 0;
+  }
+
+  .card__inner {
+    padding: 0;
+  }
+
+  .card__inner_transport {
+    width: 162px;
+    margin-left: 8px;
+  }
+
+  .card__inner_level {
+    .card__subtitle {
+      box-sizing: border-box;
+      margin-bottom: 6px;
+      padding-right: 10px;
+      text-align: right;
+    }
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -128,14 +245,14 @@
   }
 
   .companions__section-title {
-    width: 50%;
     order: 1;
+    width: 50%;
   }
 
   .companions__list {
+    order: 5;
     width: 630px;
     margin: 0;
-    order: 5;
   }
 
   .companions__text.text_weight_light {
@@ -147,9 +264,9 @@
   }
 
   .companions__button {
+    order: 4;
     box-sizing: border-box;
     width: 280px;
-    order: 4;
     margin-top: 14px;
   }
 

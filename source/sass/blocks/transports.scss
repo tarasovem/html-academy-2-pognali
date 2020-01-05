@@ -1,14 +1,14 @@
 .transports {
-  display: flex;
-  padding-left: 0;
-  justify-content: center;
-  list-style: none;
   font-size: 0;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  list-style: none;
 }
 
 .transports__item {
-  margin-left: 4px;
   margin-right: 4px;
+  margin-left: 4px;
 }
 
 .transports__icon {
@@ -19,5 +19,24 @@
   &_active {
     opacity: 1;
     fill: $color_cello;
+  }
+}
+
+.transports_type_rounded {
+  justify-content: flex-start;
+
+  .transports__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    border-radius: 50%;
+    background-color: #edeff6;
+  }
+
+  .transports__icon {
+    height: 16px;
   }
 }
