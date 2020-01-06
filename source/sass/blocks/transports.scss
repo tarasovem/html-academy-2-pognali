@@ -40,3 +40,21 @@
     height: 16px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .transports_type_rounded {
+    margin-left: 0;
+    flex-direction: column;
+    position: absolute;
+    top: 30px;
+    right: 38px;
+
+    .transports__icon {
+      height: 21px;
+    }
+
+    .transports__item {
+      background-color: transparent;
+    }
+  }
+}
