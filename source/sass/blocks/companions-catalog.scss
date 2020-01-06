@@ -8,3 +8,10 @@
 .companions-catalog__card {
   margin-bottom: 10px;
 }
+
+@media (min-width: $tablet-width) {
+  .companions-catalog {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}

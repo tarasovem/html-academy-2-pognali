@@ -10,13 +10,13 @@
   display: inline-flex;
   justify-content: center;
   overflow: hidden;
-  padding: 15px 62px;
-  background-color: $color_white;
   text-align: center;
+  width: 50%;
 
   &:first-child {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    border-right: 1px solid #edeff6;
   }
 
   &:last-child {
@@ -26,6 +26,23 @@
 }
 
 .pagination__link {
-  height: 100%;
+  display: inline-block;
   font-size: 0;
+  width: 100%;
+  height: 40px;
+  background-color: $color_white;
+
+  &_prev {
+    background-image: url("../img/triangle-arrow-left.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 10px 20px;
+  }
+
+  &_next {
+    background-image: url("../img/triangle-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 10px 20px;
+  }
 }
