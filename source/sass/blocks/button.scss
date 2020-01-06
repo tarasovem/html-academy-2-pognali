@@ -39,3 +39,10 @@
   background-position: left center;
   background-size: 18px 18px;
 }
+
+@media (min-width: $tablet-width) {
+  .button_type_view-all {
+    margin-top: 38px;
+    margin-bottom: 42px;
+  }
+}
