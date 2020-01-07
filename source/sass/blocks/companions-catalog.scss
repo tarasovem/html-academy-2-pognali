@@ -279,3 +279,21 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .companions-catalog__card {
+    width: 950px;
+
+    .card__avatar {
+      width: 285px;
+      height: 285px;
+      margin: 0;
+      border-radius: 0;
+    }
+
+    .card__subject {
+      margin-top: 42px;
+      margin-left: 58px;
+    }
+  }
+}
