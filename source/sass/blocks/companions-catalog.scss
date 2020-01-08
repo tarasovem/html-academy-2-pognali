@@ -3,7 +3,7 @@
   background-color: $color_whisper;
 }
 
-.companions-catalog__wrapper {
+.companions-catalog__inner {
   box-sizing: border-box;
   padding-right: 25px;
   padding-left: 25px;
@@ -162,7 +162,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .companions-catalog__wrapper {
+  .companions-catalog__inner {
     padding-right: 40px;
     padding-left: 40px;
 
@@ -290,15 +290,18 @@
 
 @media (min-width: $desktop-width) {
   .companions-catalog__wrapper {
-    padding-right: 60px;
-    padding-left: 60px;
-
     @include container($desktop-width);
   }
 
-  .companions-catalog__card {
-    width: 950px;
+  .companions-catalog__inner {
+    padding-right: 60px;
+    padding-left: 60px;
+    max-width: 950px;
+    margin-left: 0;
+    box-sizing: content-box;
+  }
 
+  .companions-catalog__card {
     .card__avatar {
       width: 285px;
       height: 285px;

@@ -51,6 +51,10 @@
   display: none;
 }
 
+.pagination__pages {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .pagination {
     justify-content: space-between;

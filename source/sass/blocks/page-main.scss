@@ -25,7 +25,6 @@
   position: relative;
   margin: 0;
   padding-top: 10px;
-  padding-left: 25px;
   color: $color_white;
   background-color: $color_big-stone;
 
@@ -76,6 +75,15 @@
   padding-bottom: 6px;
 }
 
+.page-main__title-wrapper {
+  display: flex;
+  box-sizing: border-box;
+  padding-right: 27px;
+  padding-left: 27px;
+
+  @include container($mobile-width);
+}
+
 @media (min-width: $tablet-width) {
   .page-main__wrapper {
     padding-right: 40px;
@@ -120,6 +128,15 @@
     padding-top: 223px;
     padding-bottom: 0;
   }
+
+  .page-main__title-wrapper {
+    display: flex;
+    box-sizing: border-box;
+    padding-right: 74px;
+    padding-left: 74px;
+
+    @include container($tablet-width);
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -155,5 +172,13 @@
 
   .page-main__directions {
     padding-top: 0;
+  }
+
+  .page-main__title-wrapper {
+    display: flex;
+    padding-right: 124px;
+    padding-left: 124px;
+
+    @include container($desktop-width);
   }
 }
