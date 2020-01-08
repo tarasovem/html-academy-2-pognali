@@ -1,8 +1,14 @@
 .companions-catalog {
-  padding-right: 25px;
   padding-bottom: 46px;
-  padding-left: 25px;
   background-color: $color_whisper;
+}
+
+.companions-catalog__wrapper {
+  box-sizing: border-box;
+  padding-right: 25px;
+  padding-left: 25px;
+
+  @include container($mobile-width);
 }
 
 .companions-catalog__list {
@@ -156,9 +162,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .companions-catalog {
+  .companions-catalog__wrapper {
     padding-right: 40px;
     padding-left: 40px;
+
+    @include container($tablet-width);
   }
 
   .companions-catalog__card {
@@ -281,11 +289,15 @@
 }
 
 @media (min-width: $desktop-width) {
-  .companions-catalog {
-    width: 950px;
+  .companions-catalog__wrapper {
+    padding-right: 60px;
+    padding-left: 60px;
+
+    @include container($desktop-width);
   }
 
   .companions-catalog__card {
+    width: 950px;
 
     .card__avatar {
       width: 285px;
@@ -295,8 +307,63 @@
     }
 
     .card__subject {
-      margin-top: 42px;
+      margin-top: 48px;
       margin-left: 58px;
+    }
+
+    .card__tags {
+      top: 98px;
+      left: 347px;
+    }
+
+    .card__subject::before {
+      right: auto;
+      left: -18px + -7px;
+      transform: translateY(-50%);
+    }
+
+    .button {
+      font-size: 20px;
+      top: 184px;
+      left: 340px;
+    }
+
+    .card__like {
+      top: 184px;
+      left: 488px;
+    }
+
+    .card__followers {
+      top: 150px;
+    }
+
+    .card__subtitle {
+      display: none;
+    }
+
+    .card__countries {
+      position: absolute;
+      top: 44px;
+      left: 674px;
+      flex-direction: column;
+      margin: 0;
+    }
+
+    .card__transports {
+      top: 194px;
+      right: auto;
+      left: 666px;
+      flex-direction: row;
+      margin: 0;
+    }
+
+    .level {
+      right: 44px;
+      top: 182px;
+    }
+
+    .button_type_view-all {
+      font-size: 20px;
     }
   }
 }
