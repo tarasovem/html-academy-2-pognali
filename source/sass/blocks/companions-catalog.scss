@@ -281,8 +281,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .companions-catalog__card {
+  .companions-catalog {
     width: 950px;
+  }
+
+  .companions-catalog__card {
 
     .card__avatar {
       width: 285px;
