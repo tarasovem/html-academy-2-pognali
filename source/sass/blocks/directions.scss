@@ -10,7 +10,7 @@
 .directions__wrapper {
   box-sizing: border-box;
 
-  @include container(320px);
+  @include container();
 }
 
 .directions__description {
@@ -104,8 +104,6 @@
     width: 100%;
     padding-right: 75px;
     padding-left: 75px;
-
-    @include container($tablet-width);
   }
 
   .directions__section-title {
@@ -148,8 +146,6 @@
     width: 1440px;
     height: 750px;
     padding: 250px 60px 50px;
-
-    @include container($desktop-width);
   }
 
   .directions__list {

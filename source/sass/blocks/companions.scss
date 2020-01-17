@@ -10,7 +10,7 @@
 .companions__wrapper {
   box-sizing: border-box;
 
-  @include container(320px);
+  @include container();
 }
 
 .companions__section-title {
@@ -54,8 +54,6 @@
     padding-top: 222px;
     padding-right: 75px;
     padding-left: 75px;
-
-    @include container($tablet-width);
   }
 
   .companions__section-title {
@@ -115,8 +113,6 @@
     flex-wrap: wrap;
     width: 100%;
     height: 758px;
-
-    @include container($desktop-width);
   }
 
   .companions__section-title {

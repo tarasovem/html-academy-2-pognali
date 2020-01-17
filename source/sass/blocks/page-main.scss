@@ -8,7 +8,7 @@
   box-sizing: border-box;
   background-color: $color_big-stone;
 
-  @include container(320px);
+  @include container();
 }
 
 .page-main__slogan {
@@ -48,7 +48,7 @@
   box-sizing: border-box;
   padding: 50px 100px 34px 50px;
 
-  @include container(320px);
+  @include container();
 }
 
 .page-main__progress {
@@ -81,15 +81,13 @@
   padding-right: 27px;
   padding-left: 27px;
 
-  @include container($mobile-width);
+  @include container();
 }
 
 @media (min-width: $tablet-width) {
   .page-main__wrapper {
     padding-right: 40px;
     padding-left: 40px;
-
-    @include container($tablet-width);
   }
 
   .page-main__wrapper-user {
@@ -134,8 +132,6 @@
     box-sizing: border-box;
     padding-right: 74px;
     padding-left: 74px;
-
-    @include container($tablet-width);
   }
 }
 
@@ -151,8 +147,6 @@
   .page-main__wrapper {
     padding-right: 60px;
     padding-left: 60px;
-
-    @include container($desktop-width);
   }
 
   .page-main__slogan {
@@ -178,7 +172,5 @@
     display: flex;
     padding-right: 124px;
     padding-left: 124px;
-
-    @include container($desktop-width);
   }
 }

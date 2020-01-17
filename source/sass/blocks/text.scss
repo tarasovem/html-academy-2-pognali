@@ -2,18 +2,18 @@
   color: $color_white;
   font-size: $text-size_default;
   line-height: 22px;
-}
 
-.text_weight_light {
-  font-weight: 300;
-}
+  &_weight_light {
+    font-weight: 300;
+  }
 
-.text_weight_bold {
-  font-weight: 700;
-}
+  &_weight_bold {
+    font-weight: 700;
+  }
 
-.text_theme_dark {
-  color: $color_tundora;
+  &_theme_dark {
+    color: $color_tundora;
+  }
 }
 
 @media (min-width: $desktop-width) {

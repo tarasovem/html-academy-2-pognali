@@ -20,7 +20,7 @@
   padding-right: 57px;
   padding-left: 50px;
 
-  @include container(320px);
+  @include container();
 }
 
 .about__description {
@@ -75,28 +75,23 @@
     align-items: center;
     justify-content: center;
     width: 274px;
-    height: 80px;
     min-height: 80px;
     margin-top: 52px;
     margin-bottom: 0;
+    padding: 30px 34px;
+    box-sizing: border-box;
 
     &::after {
       margin-left: 80px;
     }
-  }
-
-  .about__wrapper {
-    @include container($tablet-width);
   }
 }
 
 @media (min-width: $desktop-width) {
   .about__wrapper {
     padding-right: 60px;
-    padding-left: 60px;
     padding-bottom: 73px;
-
-    @include container($desktop-width);
+    padding-left: 60px;
   }
 
   .about__section-title {

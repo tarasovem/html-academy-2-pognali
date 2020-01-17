@@ -82,7 +82,7 @@
   padding-right: 50px;
   padding-left: 50px;
 
-  @include container(320px);
+  @include container();
 
   &::before {
     position: absolute;
@@ -103,8 +103,6 @@
   .add-profile__wrapper {
     padding-top: 162px;
     padding-right: 75px;
-
-    @include container($tablet-width);
 
     &::before {
       top: auto;
@@ -179,8 +177,6 @@
     padding-left: 130px;
     padding-right: 405px;
     padding-bottom: 105px;
-
-    @include container($desktop-width);
 
     &::before {
       width: 198px;

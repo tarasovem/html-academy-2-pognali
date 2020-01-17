@@ -8,7 +8,7 @@
   padding-right: 25px;
   padding-left: 25px;
 
-  @include container($mobile-width);
+  @include container();
 }
 
 .companions-catalog__list {
@@ -165,8 +165,6 @@
   .companions-catalog__inner {
     padding-right: 40px;
     padding-left: 40px;
-
-    @include container($tablet-width);
   }
 
   .companions-catalog__card {
@@ -289,10 +287,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .companions-catalog__wrapper {
-    @include container($desktop-width);
-  }
-
   .companions-catalog__inner {
     padding-right: 60px;
     padding-left: 60px;
