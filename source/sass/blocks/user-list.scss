@@ -6,14 +6,21 @@
 }
 
 .user-list__item {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 12px 38px;
+  background-color: $color_mustard;
   border-radius: 21px;
-  background-color: $bg-color_accent_lighter;
+  cursor: pointer;
 }
 
 .user-list__link {
-  color: $text-color_dark;
+  display: inline-block;
+  font-weight: 700;
   font-size: 17px;
+  color: $color_cello;
   text-transform: uppercase;
+  text-decoration: none;
+  box-sizing: border-box;
 }

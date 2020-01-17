@@ -1,4 +1,57 @@
 .page-header {
-  padding: 27px 25px;
-  background-color: $bg-color_primary;
+  box-sizing: border-box;
+  padding: 27px 0;
+  background-color: $color_big-stone;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-right: 25px;
+  padding-left: 25px;
+
+  @include container();
+}
+
+.page-header__logo img {
+  vertical-align: middle;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .page-header__wrapper {
+    position: relative;
+    justify-content: center;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    top: -5px;
+    left: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .page-header {
+    padding-top: 50px;
+  }
+
+  .page-header__logo {
+    position: static;
+    margin-right: auto;
+  }
 }

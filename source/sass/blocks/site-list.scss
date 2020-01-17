@@ -7,6 +7,29 @@
   line-height: 36px;
   font-weight: 500;
   text-transform: uppercase;
-  color: $text-color_darker;
+  color: $color_big-stone;
   text-decoration: none;
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    display: flex;
+  }
+
+  .site-list__link {
+    color: $color_white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+
+    &:not(:last-child) {
+      margin-right: 38px;
+    }
+  }
+
+  .site-list__item {
+    &:not(:last-child) {
+      margin-right: 36px;
+    }
+  }
 }

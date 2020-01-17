@@ -1,29 +1,32 @@
 .about {
   position: relative;
-  padding-right: 57px;
-  padding-left: 50px;
-  background-color: $bg-color_primary_light;
-  background-image:
-    url("../../img/about-mobile@1x.png"),
-    url("../../img/blue_back.png");
-  background-repeat: no-repeat;
-  background-position:
-    bottom -30px center,
-    top 40px left -19px;
+  background-color: $color_blue-whale;
 
   &::after {
     background-image: inherit;
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: bottom -15px center;
 
     @include section-border-radius_bottom;
   }
 }
 
+.about__link {
+  display: none;
+}
+
+.about__wrapper {
+  box-sizing: border-box;
+  padding-right: 57px;
+  padding-left: 50px;
+
+  @include container();
+}
+
 .about__description {
-  color: $text-color_light;
   font-size: $text-size_default;
   line-height: 22px;
+  color: $color_white;
 }
 
 .about__description_weight_light {
@@ -32,4 +35,80 @@
 
 .about__description_weight_bold {
   font-weight: 700;
+}
+
+@media (min-width: $tablet-width) {
+  .about__section-title {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 45px;
+    margin-bottom: 38px;
+  }
+
+  .about__text {
+    margin-top: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 43px;
+    }
+  }
+
+  .text_weight_light {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 33px;
+    width: 300px;
+  }
+
+  .text_weight_bold {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 25px;
+    width: 260px;
+  }
+
+  .about__link {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 274px;
+    min-height: 80px;
+    margin-top: 52px;
+    margin-bottom: 0;
+    padding: 30px 34px;
+    box-sizing: border-box;
+
+    &::after {
+      margin-left: 80px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about__wrapper {
+    padding-right: 60px;
+    padding-bottom: 73px;
+    padding-left: 60px;
+  }
+
+  .about__section-title {
+    margin-bottom: 60px;
+  }
+
+  .text_weight_bold.about__text {
+    font-size: 21px;
+    line-height: 25px;
+    width: 410px;
+  }
+
+  .about__text {
+    width: 620px;
+  }
+
+  .about__link {
+    margin-top: 86px;
+  }
 }

@@ -1,5 +1,17 @@
 .level {
-  color: $text-color_light;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: $color_white;
+
+  &_bg_grey {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
 }
 
 .level__count {
@@ -9,7 +21,7 @@
 }
 
 .level__count_theme_dark {
-  color: $text-color_dark;
+  color: $color_cello;
 }
 
 .level__title {

@@ -1,11 +1,13 @@
 @import "variables";
 @import "mixins";
 @import "base";
+@import "fonts";
 @import "blocks/button";
 @import "blocks/text";
 @import "blocks/card";
 @import "blocks/level";
 @import "blocks/tags";
+@import "blocks/social";
 @import "blocks/section-title";
 @import "blocks/page-header";
 @import "blocks/main-nav";
@@ -20,9 +22,9 @@
 @import "blocks/add-profile";
 @import "blocks/transports";
 @import "blocks/developers";
-@import "blocks/social";
 @import "blocks/countries";
 @import "blocks/site-list";
 @import "blocks/companions-catalog";
 @import "blocks/pagination";
 @import "blocks/page-footer";
+@import "blocks/companions-filter";

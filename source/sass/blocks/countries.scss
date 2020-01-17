@@ -1,11 +1,31 @@
 .countries {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   list-style: none;
 }
 
 .countries__description {
   font-size: 15px;
-  line-height: 18px;
   font-weight: 500;
+  line-height: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
   text-transform: uppercase;
-  color: $text-color_dark;
+  color: $color_cello;
+}
+
+.countries__item {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-right: 19px;
+  }
+}
+
+.countries__flag {
+  display: flex;
 }
