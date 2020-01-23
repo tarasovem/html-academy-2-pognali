@@ -15,6 +15,10 @@
   font-weight: 700;
 }
 
+.review__name {
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
   .review {
     background-color: transparent;

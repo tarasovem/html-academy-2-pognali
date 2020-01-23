@@ -5,7 +5,7 @@
   &::after {
     background-image: inherit;
     background-repeat: no-repeat;
-    background-position: bottom -15px center;
+    background-position: bottom -10px center;
 
     @include section-border-radius_bottom;
   }
@@ -38,6 +38,18 @@
 }
 
 @media (min-width: $tablet-width) {
+  .about::after {
+    background-image: none;
+    height: 60px;
+    bottom: -60px;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
+
+  .about__wrapper {
+    padding-bottom: 30px;
+  }
+
   .about__section-title {
     font-size: 45px;
     font-weight: 700;

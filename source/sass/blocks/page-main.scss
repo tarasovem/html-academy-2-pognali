@@ -4,14 +4,21 @@
 }
 
 .page-main__wrapper {
-  position: relative;
   box-sizing: border-box;
   background-color: $color_big-stone;
+  background-image:
+    url("../img/traveller-illustration-mobile@1x.png"),
+    url("../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position:
+    right 50px bottom,
+    center bottom -90px;
 
   @include container();
 }
 
 .page-main__slogan {
+  position: relative;
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
@@ -19,6 +26,21 @@
   padding: 25px 40px 267px;
   text-align: center;
   color: $color_white;
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 192px;
+    height: 255px;
+    right: 50px;
+    bottom: 0;
+    //background-image: url("../img/traveller-illustration-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    z-index: 0;
+  }
+
 }
 
 .page-main__title {
@@ -58,6 +80,18 @@
 .page-main__about {
   padding-top: 70px;
   padding-bottom: 35px;
+  background-image:
+    url("../img/about-mobile@1x.png"),
+    url("../img/blue_back-mobile@1px.png");
+  background-repeat: no-repeat;
+  background-position:
+    center bottom -40px,
+    right calc(50% + 113px) top 40px;
+
+  &::after {
+    background-image: url("../img/about-mobile@1x.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .page-main__directions {
@@ -88,6 +122,13 @@
   .page-main__wrapper {
     padding-right: 40px;
     padding-left: 40px;
+    background-color: $color_blue-whale;
+    background-image:
+      url("../img/traveller-illustration-tablet@1x.png"),
+      url("../img/globe-back-tablet@1x.jpg");
+    background-position:
+      right 112px bottom,
+      center bottom -145px;
   }
 
   .page-main__wrapper-user {
@@ -115,7 +156,9 @@
     top: 435px;
     left: 50%;
     padding: 20px;
-    transform: translateX(-103%);
+    transform: translateX(-330px);
+    max-width: 320px;
+    box-sizing: border-box;
   }
 
   .page-main__progress {
@@ -123,8 +166,14 @@
   }
 
   .page-main__about {
-    padding-top: 223px;
+    padding-top: 138px;
     padding-bottom: 0;
+    background-image:
+      url("../img/about-tablet@1x.png"),
+      url("../img/blue_back-tablet@1px.png");
+    background-position:
+      right calc(50% - 180px) bottom 15px,
+      left 50% top 96px;
   }
 
   .page-main__title-wrapper {
