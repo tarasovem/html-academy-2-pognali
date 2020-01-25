@@ -103,6 +103,9 @@
   .add-profile__wrapper {
     padding-top: 162px;
     padding-right: 75px;
+    background-image: url("../img/add-profile-tablet.png");
+    background-repeat: no-repeat;
+    background-position: right 40px top 238px;
 
     &::before {
       top: auto;
@@ -148,14 +151,14 @@
   }
 
   .add-profile__button {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
     display: flex;
     align-items: center;
     width: 380px;
     height: 66px;
     margin-bottom: 6px;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 20px;
 
     &::before {
       width: 66px;
@@ -174,18 +177,20 @@
 
 @media (min-width: $desktop-width) {
   .add-profile__wrapper {
-    padding-left: 130px;
     padding-right: 405px;
     padding-bottom: 105px;
+    padding-left: 130px;
+    background-image: url("../img/add-profile-desktop.png");
+    background-position: right 248px top 228px;
 
     &::before {
-      width: 198px;
-      height: 198px;
-      background-size: 198px 198px;
+      top: 50%;
       right: 134px;
       bottom: auto;
-      top: 50%;
+      width: 198px;
+      height: 198px;
       transform: translateY(-64px);
+      background-size: 198px 198px;
     }
   }
 }

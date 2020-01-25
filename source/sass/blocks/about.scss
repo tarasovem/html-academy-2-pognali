@@ -41,7 +41,7 @@
   .about::after {
     background-image: none;
     height: 60px;
-    bottom: -60px;
+    bottom: -59px;
     border-bottom-right-radius: 60px;
     border-bottom-left-radius: 60px;
   }
@@ -100,10 +100,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .about::after {
+    background-image: url("../img/about-desktop@1x.png");
+    background-position: right calc(50% - 330px) bottom;
+  }
+
   .about__wrapper {
     padding-right: 60px;
-    padding-bottom: 73px;
-    padding-left: 60px;
+    padding-bottom: 100px;
+    padding-left: 130px;
   }
 
   .about__section-title {

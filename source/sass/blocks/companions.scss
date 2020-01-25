@@ -138,6 +138,10 @@
     flex-wrap: wrap;
     width: 100%;
     height: 758px;
+    background-position:
+      left 60px top 138px,
+      left 554px top 196px,
+      right 954px top 448px;
   }
 
   .companions__section-title {
@@ -149,6 +153,10 @@
     order: 5;
     width: 630px;
     margin: 0;
+  }
+
+  .companions__text {
+    margin-bottom: 60px;
   }
 
   .companions__text.text_weight_light {

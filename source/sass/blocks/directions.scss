@@ -152,6 +152,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .directions::after {
+    bottom: -59px;
+  }
+
   .directions__wrapper {
     display: flex;
     align-content: center;
@@ -159,8 +163,9 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 1440px;
-    height: 750px;
+    height: 780px;
     padding: 250px 60px 50px;
+    background-position: right 60px top 180px, left 60px top 180px;
   }
 
   .directions__list {
