@@ -57,6 +57,13 @@
   .directions {
     justify-content: flex-start;
 
+    &::after {
+      height: 60px;
+      bottom: -60px;
+      border-bottom-right-radius: 60px;
+      border-bottom-left-radius: 60px;
+    }
+
     .card {
       flex-direction: row;
       height: 140px;
@@ -102,8 +109,14 @@
 
   .directions__wrapper {
     width: 100%;
-    padding-right: 75px;
-    padding-left: 75px;
+    padding: 30px 75px 20px;
+    background-image:
+      url("../img/flags-back@1x.png"),
+      url("../img/grey-back.png");
+    background-repeat: no-repeat;
+    background-position:
+      right 40px top 38px,
+      left 40px top 374px;
   }
 
   .directions__section-title {
@@ -112,6 +125,7 @@
     line-height: 45px;
     margin-bottom: 62px;
     padding-right: 0;
+    padding-left: 0;
   }
 
   .directions__text {
@@ -121,6 +135,7 @@
     width: 340px;
     margin-bottom: 112px;
     padding-right: 0;
+    padding-left: 0;
   }
 
   .directions__list {
@@ -137,6 +152,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .directions::after {
+    bottom: -59px;
+  }
+
   .directions__wrapper {
     display: flex;
     align-content: center;
@@ -144,8 +163,9 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 1440px;
-    height: 750px;
+    height: 780px;
     padding: 250px 60px 50px;
+    background-position: right 60px top 180px, left 60px top 180px;
   }
 
   .directions__list {
