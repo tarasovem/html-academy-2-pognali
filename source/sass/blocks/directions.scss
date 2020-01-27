@@ -86,7 +86,7 @@
 
       img {
         display: block;
-        object-fit: cover;
+        height: auto;
       }
     }
 
@@ -117,6 +117,14 @@
     background-position:
       right 40px top 38px,
       left 40px top 374px;
+    @media (min-resolution: $retina-dppx) {
+      background-image:
+        url("../img/flags-back@2x.png"),
+        url("../img/grey-back.png");
+      background-size:
+        289px auto,
+        auto;
+    }
   }
 
   .directions__section-title {
