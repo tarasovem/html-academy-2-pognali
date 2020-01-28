@@ -86,6 +86,7 @@
 
       img {
         display: block;
+        max-width: 100%;
         height: auto;
       }
     }
@@ -117,6 +118,7 @@
     background-position:
       right 40px top 38px,
       left 40px top 374px;
+
     @media (min-resolution: $retina-dppx) {
       background-image:
         url("../img/flags-back@2x.png"),
