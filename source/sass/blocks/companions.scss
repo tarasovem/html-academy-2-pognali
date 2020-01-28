@@ -19,6 +19,17 @@
     right 25px top 68px,
     left -10px top 332px;
 
+  @media (min-resolution: $retina-dppx) {
+    background-image:
+      url("../img/blue_back-mobile@1px.png"),
+      url("../img/smolov-back-desktop@2x.png"),
+      url("../img/rogovaya-back-mobile@2x.png");
+    background-size:
+      auto,
+      143px auto,
+      285px auto;
+  }
+
   @include container();
 }
 
@@ -79,6 +90,17 @@
       left 40px top 138px,
       left 40px top 490px,
       right 75px top 140px;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image:
+        url("../img/blue_back-mobile@1px.png"),
+        url("../img/smolov-back-desktop@2x.png"),
+        url("../img/rogovaya-back-desktop@2x.png");
+      background-size:
+        auto,
+        143px auto,
+        285px auto;
+    }
   }
 
   .companions__section-title {

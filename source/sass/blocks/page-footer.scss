@@ -25,6 +25,13 @@
 .page-footer__logo {
   display: flex;
   justify-content: center;
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }
 }
 
 @media (min-width: $tablet-width) {
